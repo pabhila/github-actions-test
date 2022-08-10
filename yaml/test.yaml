@@ -1,0 +1,25 @@
+name: "bhairavi"
+age: 30
+address: "test: test"
+active: true
+martial: single
+key:
+    key: value
+    key1: value1
+    key2:
+        key: value
+        key1: value
+jsonObject: {key: value, key1: 22, key2: {key:value}}
+array:
+   - item
+   - item1
+   - item2
+   - {key:value}
+jsonArray: [item1, item2]
+objectsArray:
+   - key: value
+   - key: value
+longText: |
+    sajdnajdbhabfhbahwbfhqbwhfbhqwbfqwfqw
+    jwqfhqwbhfbqhwbfqbwhfbqhywbfhbqwf
+    wqfjjwqbfhbqwhbfh
