@@ -16,6 +16,8 @@ jobs:
         run: |
             pwd
             ls -a
+            cd yaml
+            ls -a
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@main
