@@ -13,6 +13,6 @@ jobs:
                 run: "node -v\nnpm -v\n"
             -   name: 'python Command'
                 run: |
-                   import 
+                   import platform
                    print(platform.processor())
                 shell: python
