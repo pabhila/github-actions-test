@@ -9,7 +9,13 @@ jobs:
       - name: Present Working Directory
         run: |
             pwd
-            ls
+            ls -a
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: After Checkout
+        run: |
+            pwd
+            ls -a
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@main
