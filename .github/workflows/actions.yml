@@ -14,18 +14,35 @@ jobs:
             echo $GITHUB_REPOSITORY
             echo $GITHUB_WORKSPACE
             echo "${{ github.token }}"
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: After Checkout
+      # - name: Checkout
+      #   uses: actions/checkout@v1
+      # - name: After Checkout
+      #   run: |
+      #       pwd
+      #       ls -a
+      #       cd yaml
+      #       ls -a
+      # - name: Simple JS Action
+      #   id: greet
+      #   uses: actions/hello-world-javascript-action@main
+      #   with:
+      #      who-to-greet: John
+      # - name: Log Greeting Time
+      #   run: echo "${{ steps.greet.outputs.time }}}"
+      - name: "Set workspace env var"
         run: |
-            pwd
-            ls -a
-            cd yaml
-            ls -a
-      - name: Simple JS Action
-        id: greet
-        uses: actions/hello-world-javascript-action@main
-        with:
-           who-to-greet: John
-      - name: Log Greeting Time
-        run: echo "${{ steps.greet.outputs.time }}}"
+          echo 'ABSOLUTE_CUSTOM_WORKSPACE="$GITHUB_WORKSPACE/../../workspace"' >> $GITHUB_ENV
+          echo 'RELATIVE_CUSTOM_WORKSPACE="./../../workspace"' >> $GITHUB_ENV
+        shell: bash
+      - name: Set the Output Context
+        id: "OutputContext"
+        run: |
+            echo "contextDataPath=${{ format('{0}/{1}', env.RELATIVE_CUSTOM_WORKSPACE, 'abi_coverity_scan_output_context.json') }} >> $GITHUB_OUTPUT 
+        shell: bash
+      - name: "Read Context Output"
+        id: "ReadContextOutput"
+        run: |
+          echo ${{steps.OutputContext.outputs.contextDataPath}}
+        shell: bash
+
+
