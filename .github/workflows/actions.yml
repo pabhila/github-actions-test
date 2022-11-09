@@ -37,7 +37,7 @@ jobs:
       - name: Set the Output Context
         id: "OutputContext"
         run: |
-            echo "contextDataPath=${{ format('{0}/{1}', env.RELATIVE_CUSTOM_WORKSPACE, 'abi_coverity_scan_output_context.json') }} >> $GITHUB_OUTPUT 
+            echo "contextDataPath=${{ format('{0}/{1}', env.RELATIVE_CUSTOM_WORKSPACE, abi_coverity_scan_output_context.json) }} >> $GITHUB_OUTPUT 
         shell: bash
       - name: "Read Context Output"
         id: "ReadContextOutput"
