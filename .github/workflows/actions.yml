@@ -54,5 +54,9 @@ jobs:
           # end of optional handling for multi line json
           echo "::set-output name=contextData::$content"
         shell: bash
+      
+      - name: "Json Object"
+        run: |
+           echo "${{fromJson(steps.ReadContextOutput.outputs.contextData).Outputs}}"
 
 
