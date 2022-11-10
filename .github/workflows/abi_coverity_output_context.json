@@ -1,0 +1,3015 @@
+{
+"BinaryScan": {
+    "ScanDetailsURL": "",
+    "ScanID": "",
+    "ServerGroup": "6",
+    "ServerURL": "https://bdba001.icloud.intel.com",
+    "Upload": ""
+},
+"BuildInfo": {
+    "ABIVersion": "",
+    "ArtifactUrl": "",
+    "Branch": "",
+    "BuildEndTime": "",
+    "BuildJobUrl": "",
+    "BuildQuality": "",
+    "BuildStartTime": "",
+    "BuildType": "",
+    "CodeScanServerUrl": "",
+    "CodeScanServerVersion": "",
+    "CustomLibraryRepoUrl": "",
+    "FullName": "platform.Common.sw.win-driver.sample",
+    "GitServerUrl": "",
+    "IPScanServerUrl": "",
+    "IPScanServerVersion": "",
+    "Id": "",
+    "IngredientGitServerUrl": "",
+    "IngredientRevision": "",
+    "Name": "Sample",
+    "ReleaseNotes": "",
+    "ReleaseVersion": "",
+    "ReportUrls": [],
+    "Revision": "",
+    "SDL": [
+        {
+            "ID": "8976",
+            "Submitter": "***",
+            "URL": "https://sdl-e.app.intel.com/project?id=3e0f5f68-76b9-4129-823d-b68492c70f78"
+        }
+    ],
+    "ServerURL": "https://onebkc.intel.com",
+    "SignVersion": "",
+    "Type": "onebkc",
+    "Version": ""
+},
+"CabinetFile": {
+    "cab_files": [],
+    "cabinet_name_template": "SampleIngredient",
+    "directive_file": "",
+    "disk_directory_template": "CabFiles",
+    "output_path": "",
+    "output_root": "",
+    "source_path": "",
+    "variables": "UniqueFiles=NO,DestinationDir=Sample,CabinetFileCountThreshold=0,FolderFileCountThreshold=0,FolderSizeThreshold=0,MaxCabinetSize=0,MaxDiskFileCount=0,MaxDiskSize=0"
+},
+"Configuration": "Release",
+"Coverity": {
+    "CompilerTemplates": [],
+    "IgnoreFiles": [],
+    "ServerURL": "https://coverityent-pilot3.devtools.intel.com",
+    "SkipCoverityScan": false,
+    "Stream": ""
+},
+"DeployCustomPath": "",
+"DeployCustomServer": "",
+"DeployToOWR": "",
+"Description": "OWR ABI Project File for DCHU Sample ingredient",
+"EWDKPlatform": "",
+"ErrorHandling": {
+    "ConsoleLogLevel": "",
+    "FileLogLevel": "",
+    "FileLogPath": "",
+    "SentryCaptureLevel": "",
+    "SentryEventLevel": "",
+    "SentryUrl": ""
+},
+"Errors": [],
+"IngredientName": "Sample",
+"IngredientPath": "src/windows",
+"IngredientVersion": "9.3.15.598",
+"Klocwork": {
+    "BuildId": "Sample_9.3.15.598",
+    "BuildURL": "",
+    "IgnoreFiles": "",
+    "KLOCWORK_LTOKEN": "",
+    "LicenseHost": "klocwork05p.elic.intel.com",
+    "LicensePort": "7500",
+    "OnErrorContinueAnalysis": "",
+    "OverWriteDuplicates": "",
+    "Project": "osrfx2",
+    "ServerPort": "8105",
+    "ServerURL": "https://klocwork-jf7.devtools.intel.com",
+    "SkipKlocworkScan": false,
+    "Type": "",
+    "sync_mode": ""
+},
+"KlocworkContext": {
+    "BuildSpecificationsPath": "",
+    "RunKlocworkScan": false,
+    "kwcsprojparserExe": "",
+    "kwinjectExe": ""
+},
+"Mtcd": {
+    "backoff_factor": [
+        [
+            "backoff_factor"
+        ]
+    ],
+    "client_id": "",
+    "device_type": "internal",
+    "download_type": "",
+    "output_file": "",
+    "product_id": "",
+    "product_name": "sample_product",
+    "product_template": "",
+    "product_variables": "",
+    "requested_signatures": [
+        "WINDOWS_v100_X64_NI_FULL"
+    ],
+    "retries": "",
+    "selected_product_types": "",
+    "server_url": "https://mtcdevops.intel.com",
+    "submission_files": [],
+    "submission_id": "",
+    "submission_name": "Sample_Attest_Submission",
+    "submission_template": "",
+    "submission_type": "initial",
+    "submission_variables": "",
+    "tenant_id": "",
+    "test_harness": "Attestation",
+    "test_signed": false
+},
+"OutputConfiguration": "PackageGen.json",
+"OutputDir": "OWRBuild",
+"OutputRoot": "OWRBin",
+"Outputs": [
+    {
+        "ReportFile": [
+            "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\output\\analysis-log.txt",
+            "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\coverity_snapshot-ABI_TestingCoverity-Plugin.id.txt"
+        ],
+        "SDLE": false,
+        "SnapshotId": "21625",
+        "TimeStamp": "2022-11-09 18:12:26",
+        "Type": "CoverityScan",
+        "Version": ""
+    },
+    {
+        "ReportFile": [
+            "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-result_ABI_TestingCoverity-Plugin.json",
+            "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-result_ABI_TestingCoverity-Plugin.csv",
+            "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-snapshot_ABI_TestingCoverity-Plugin.json",
+            "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-result_ABI_TestingCoverity-Plugin.pdf",
+            "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-result_ABI_TestingCoverity-Plugin.zip"
+        ],
+        "SDLE": false,
+        "SnapshotId": "21625",
+        "TimeStamp": "2022-11-09 18:22:39",
+        "Type": "CoverityScan",
+        "Version": ""
+    }
+],
+"PackageMetadataTemplate": "PackageMetadataTemplate.json",
+"PackageRoot": "OWRPackage",
+"Platform": "x64",
+"Protex": {
+    "output_dir": "",
+    "projects": [
+        {
+            "OutputConfiguration": "",
+            "ProjectID": "c_osrfx2-sample-test_22087",
+            "Server": "https://amrprotex006.devtools.intel.com",
+            "TargetPath": ""
+        },
+        {
+            "OutputConfiguration": "",
+            "ProjectID": "c_osrfx2-sample_18434",
+            "Server": "https://amrprotex006.devtools.intel.com",
+            "TargetPath": ""
+        }
+    ]
+},
+"RootDir": "C:\\runner\\_work\\workspace",
+"SchemaVersion": "1.0",
+"Sign": {
+    "AdditionalFlags": "",
+    "FailOnMissingFile": true,
+    "Operations": [
+        {
+            "AdditionalFlags": "",
+            "Certificate": "OWR-EV-20",
+            "CertificateHash": "",
+            "CrossSign": true,
+            "FailOnMissingFile": true,
+            "Files": [
+                "Apps.*osrfx2_DCHU_usersvc.exe",
+                "Drivers.*osrfx2_DCHU_base.dll",
+                "Drivers.*osrfx2_DCHU_filter.dll",
+                "Drivers.*osrfx2_DCHU_usersvc.exe",
+                "Drivers.*osrfx2_dchu_base.cat"
+            ],
+            "HashAlgorithm": "SHA256",
+            "Name": "Driver",
+            "SignRootDir": "OWRBin"
+        },
+        {
+            "AdditionalFlags": "",
+            "Certificate": "INTEL_CORP",
+            "CertificateHash": "",
+            "CrossSign": true,
+            "FailOnMissingFile": true,
+            "Files": [
+                "CabFiles.*Sample.*.cab"
+            ],
+            "HashAlgorithm": "SHA256",
+            "Name": "CabFiles",
+            "SignRootDir": "OWRPackage"
+        }
+    ],
+    "SignRootDir": "OWRBin"
+},
+"StaticSecurityScan": {
+    "DashboardURL": "",
+    "IsPublic": true,
+    "ProjectID": "329381",
+    "ScanID": "",
+    "ServerURL": "https://sast.intel.com"
+},
+"SubComponents": [
+    {
+        "AdditionalEnvVars": "",
+        "AdditionalFlags": "",
+        "BuildTarget": "",
+        "CMakeConfigureFlags": "",
+        "CleanTarget": "",
+        "Coverity": {
+            "CompilerTemplates": [
+                "cs",
+                "msvc"
+            ],
+            "IgnoreFiles": [],
+            "SkipCoverityScan": false,
+            "Stream": "ABI_TestingCoverity-Plugin"
+        },
+        "Description": "WindowsDriver Sample DCHU Base Driver",
+        "DotNetCommand": "",
+        "DotNetFrameWork": "",
+        "DotNetRuntime": "",
+        "Klocwork": {
+            "BuildId": "",
+            "BuildURL": "",
+            "IgnoreFiles": "",
+            "KLOCWORK_LTOKEN": "",
+            "LicenseHost": "",
+            "LicensePort": "",
+            "OnErrorContinueAnalysis": "",
+            "OverWriteDuplicates": "",
+            "Project": "osrfx2",
+            "ServerPort": "",
+            "ServerURL": "",
+            "SkipKlocworkScan": false,
+            "Type": "cpp",
+            "sync_mode": ""
+        },
+        "MSBuildVersionProperty": "OWRBuildVersion",
+        "Name": "BaseDriver",
+        "NmakeMacros": "",
+        "NugetArgs": "C:\\runner\\_work\\workspace\\src/windows\\WindowsDriver_DCHU_base\\osrfx2_DCHU_base.sln",
+        "NugetCommand": "restore",
+        "PostBuildSteps": [
+            {
+                "PostBuildCmd": "pwd",
+                "PostBuildEnvVars": ""
+            }
+        ],
+        "ProjectFile": "WindowsDriver_DCHU_base\\osrfx2_DCHU_base.sln",
+        "ProjectType": "MSBuild",
+        "ScriptArgs": "",
+        "Semmle": {
+            "ReportType": [
+                "sarifv2",
+                "csv"
+            ],
+            "Type": "cpp"
+        },
+        "Sign": false,
+        "SingleThreadOnly": "",
+        "Symbols": false,
+        "Verbosity": true,
+        "WorkingDirectory": "",
+        "sync_mode": true
+    },
+    {
+        "AdditionalEnvVars": "",
+        "AdditionalFlags": " -- /m /flp:logfile=CMakeApp.log",
+        "BuildTarget": "",
+        "CMakeConfigureFlags": "",
+        "CleanTarget": "",
+        "Coverity": false,
+        "Description": "CMake Sample C App",
+        "DotNetCommand": "",
+        "DotNetFrameWork": "",
+        "DotNetRuntime": "",
+        "Klocwork": {
+            "BuildId": "",
+            "BuildURL": "",
+            "IgnoreFiles": "",
+            "KLOCWORK_LTOKEN": "",
+            "LicenseHost": "",
+            "LicensePort": "",
+            "OnErrorContinueAnalysis": "",
+            "OverWriteDuplicates": "",
+            "Project": "osrfx2",
+            "ServerPort": "",
+            "ServerURL": "",
+            "SkipKlocworkScan": false,
+            "Type": "cpp",
+            "sync_mode": ""
+        },
+        "MSBuildVersionProperty": "",
+        "Name": "CMakeApp",
+        "NmakeMacros": "",
+        "NugetArgs": "",
+        "NugetCommand": "",
+        "PostBuildSteps": [],
+        "ProjectFile": "CMakeApp",
+        "ProjectType": "CMake",
+        "ScriptArgs": "",
+        "Semmle": false,
+        "Sign": false,
+        "SingleThreadOnly": "",
+        "Symbols": false,
+        "Verbosity": "",
+        "WorkingDirectory": "",
+        "sync_mode": true
+    },
+    {
+        "AdditionalEnvVars": "",
+        "AdditionalFlags": "/B /C",
+        "BuildTarget": "foo",
+        "CMakeConfigureFlags": "",
+        "CleanTarget": "",
+        "Coverity": {
+            "CompilerTemplates": [],
+            "IgnoreFiles": [],
+            "SkipCoverityScan": false,
+            "Stream": "ABI_TestingCoverity-Plugin"
+        },
+        "Description": "Nmake sample",
+        "DotNetCommand": "",
+        "DotNetFrameWork": "",
+        "DotNetRuntime": "",
+        "Klocwork": {
+            "BuildId": "",
+            "BuildURL": "",
+            "IgnoreFiles": "",
+            "KLOCWORK_LTOKEN": "",
+            "LicenseHost": "",
+            "LicensePort": "",
+            "OnErrorContinueAnalysis": "",
+            "OverWriteDuplicates": "",
+            "Project": "osrfx2",
+            "ServerPort": "",
+            "ServerURL": "",
+            "SkipKlocworkScan": true,
+            "Type": "cpp",
+            "sync_mode": ""
+        },
+        "MSBuildVersionProperty": "",
+        "Name": "Nmake",
+        "NmakeMacros": "project = sample",
+        "NugetArgs": "",
+        "NugetCommand": "",
+        "PostBuildSteps": [],
+        "ProjectFile": "nmake\\makefile",
+        "ProjectType": "nmake",
+        "ScriptArgs": "",
+        "Semmle": false,
+        "Sign": false,
+        "SingleThreadOnly": "",
+        "Symbols": false,
+        "Verbosity": "",
+        "WorkingDirectory": "",
+        "sync_mode": true
+    },
+    {
+        "AdditionalEnvVars": "",
+        "AdditionalFlags": "",
+        "BuildTarget": "",
+        "CMakeConfigureFlags": "",
+        "CleanTarget": "",
+        "Coverity": false,
+        "Description": "Sample Python Script",
+        "DotNetCommand": "",
+        "DotNetFrameWork": "",
+        "DotNetRuntime": "",
+        "Klocwork": {
+            "BuildId": "",
+            "BuildURL": "",
+            "IgnoreFiles": "",
+            "KLOCWORK_LTOKEN": "",
+            "LicenseHost": "",
+            "LicensePort": "",
+            "OnErrorContinueAnalysis": "",
+            "OverWriteDuplicates": "",
+            "Project": "",
+            "ServerPort": "",
+            "ServerURL": "",
+            "SkipKlocworkScan": true,
+            "Type": "",
+            "sync_mode": ""
+        },
+        "MSBuildVersionProperty": "",
+        "Name": "ScriptTest",
+        "NmakeMacros": "",
+        "NugetArgs": "",
+        "NugetCommand": "",
+        "PostBuildSteps": [],
+        "ProjectFile": "script_test.py",
+        "ProjectType": "Script",
+        "ScriptArgs": "",
+        "Semmle": false,
+        "Sign": false,
+        "SingleThreadOnly": "",
+        "Symbols": false,
+        "Verbosity": "",
+        "WorkingDirectory": "ScriptTest",
+        "sync_mode": true
+    },
+    {
+        "AdditionalEnvVars": "",
+        "AdditionalFlags": "",
+        "BuildTarget": "",
+        "CMakeConfigureFlags": "",
+        "CleanTarget": "",
+        "Coverity": false,
+        "Description": "Sample Python App",
+        "DotNetCommand": "",
+        "DotNetFrameWork": "",
+        "DotNetRuntime": "",
+        "Klocwork": {
+            "BuildId": "",
+            "BuildURL": "",
+            "IgnoreFiles": "",
+            "KLOCWORK_LTOKEN": "",
+            "LicenseHost": "",
+            "LicensePort": "",
+            "OnErrorContinueAnalysis": "",
+            "OverWriteDuplicates": "",
+            "Project": "",
+            "ServerPort": "",
+            "ServerURL": "",
+            "SkipKlocworkScan": true,
+            "Type": "",
+            "sync_mode": ""
+        },
+        "MSBuildVersionProperty": "",
+        "Name": "PythonApp",
+        "NmakeMacros": "",
+        "NugetArgs": "",
+        "NugetCommand": "",
+        "PostBuildSteps": [],
+        "ProjectFile": "PythonApp.py",
+        "ProjectType": "Script",
+        "ScriptArgs": "",
+        "Semmle": false,
+        "Sign": false,
+        "SingleThreadOnly": "",
+        "Symbols": false,
+        "Verbosity": "",
+        "WorkingDirectory": "PythonApp",
+        "sync_mode": true
+    },
+    {
+        "AdditionalEnvVars": "",
+        "AdditionalFlags": "",
+        "BuildTarget": "DotNetFrameWorkApp",
+        "CMakeConfigureFlags": "",
+        "CleanTarget": "",
+        "Coverity": false,
+        "Description": "DotNetFrameWork Test App",
+        "DotNetCommand": "",
+        "DotNetFrameWork": "",
+        "DotNetRuntime": "",
+        "Klocwork": false,
+        "MSBuildVersionProperty": "",
+        "Name": "DotNetFrameWorkApp",
+        "NmakeMacros": "",
+        "NugetArgs": "",
+        "NugetCommand": "",
+        "PostBuildSteps": [],
+        "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameWorkApp.sln",
+        "ProjectType": "MSBuild",
+        "ScriptArgs": "",
+        "Semmle": false,
+        "Sign": {
+            "AdditionalFlags": "",
+            "FailOnMissingFile": true,
+            "Operations": [
+                {
+                    "AdditionalFlags": "",
+                    "Certificate": "OWR-EV-20",
+                    "CertificateHash": "",
+                    "CrossSign": true,
+                    "FailOnMissingFile": true,
+                    "Files": [
+                        "Apps.*DotNetFrameWorkApp.exe"
+                    ],
+                    "HashAlgorithm": "SHA256",
+                    "Name": "Apps",
+                    "SignRootDir": "OWRBin"
+                }
+            ],
+            "SignRootDir": "OWRBin"
+        },
+        "SingleThreadOnly": "",
+        "Symbols": false,
+        "Verbosity": "",
+        "WorkingDirectory": "",
+        "sync_mode": true
+    },
+    {
+        "AdditionalEnvVars": "",
+        "AdditionalFlags": "",
+        "BuildTarget": "DotNetCoreAppWithFrameworkAppFile",
+        "CMakeConfigureFlags": "",
+        "CleanTarget": "",
+        "Coverity": false,
+        "Description": "DotNetCoreApp Test App using DotNetFramework file",
+        "DotNetCommand": "",
+        "DotNetFrameWork": "",
+        "DotNetRuntime": "",
+        "Klocwork": {
+            "BuildId": "",
+            "BuildURL": "",
+            "IgnoreFiles": "",
+            "KLOCWORK_LTOKEN": "",
+            "LicenseHost": "",
+            "LicensePort": "",
+            "OnErrorContinueAnalysis": "",
+            "OverWriteDuplicates": "",
+            "Project": "osrfx2_2",
+            "ServerPort": "",
+            "ServerURL": "",
+            "SkipKlocworkScan": false,
+            "Type": "csharp",
+            "sync_mode": ""
+        },
+        "MSBuildVersionProperty": "",
+        "Name": "DotNetCoreAppWithFrameworkAppFile",
+        "NmakeMacros": "",
+        "NugetArgs": "",
+        "NugetCommand": "",
+        "PostBuildSteps": [],
+        "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameworkApp.csproj",
+        "ProjectType": "dotnetcore",
+        "ScriptArgs": "",
+        "Semmle": false,
+        "Sign": false,
+        "SingleThreadOnly": "",
+        "Symbols": false,
+        "Verbosity": "",
+        "WorkingDirectory": "",
+        "sync_mode": true
+    },
+    {
+        "AdditionalEnvVars": "",
+        "AdditionalFlags": "fu bar",
+        "BuildTarget": "",
+        "CMakeConfigureFlags": "",
+        "CleanTarget": "",
+        "Coverity": false,
+        "Description": "Custom Script Exe Test",
+        "DotNetCommand": "",
+        "DotNetFrameWork": "",
+        "DotNetRuntime": "",
+        "Klocwork": {
+            "BuildId": "",
+            "BuildURL": "",
+            "IgnoreFiles": "",
+            "KLOCWORK_LTOKEN": "",
+            "LicenseHost": "",
+            "LicensePort": "",
+            "OnErrorContinueAnalysis": "",
+            "OverWriteDuplicates": "",
+            "Project": "",
+            "ServerPort": "",
+            "ServerURL": "",
+            "SkipKlocworkScan": true,
+            "Type": "",
+            "sync_mode": ""
+        },
+        "MSBuildVersionProperty": "",
+        "Name": "ExeScriptTest",
+        "NmakeMacros": "",
+        "NugetArgs": "",
+        "NugetCommand": "",
+        "PostBuildSteps": [],
+        "ProjectFile": "DotNetFrameWorkApp\\Output\\DotNetFrameWorkApp.exe",
+        "ProjectType": "Script",
+        "ScriptArgs": "",
+        "Semmle": false,
+        "Sign": false,
+        "SingleThreadOnly": "",
+        "Symbols": false,
+        "Verbosity": "",
+        "WorkingDirectory": "",
+        "sync_mode": true
+    }
+],
+"Symbols": {
+    "AdditionalFlags": "",
+    "PublicSymbolPatterns": {
+        ".*Drivers.*\\.pdb": "Public\\"
+    },
+    "SkipSymbolCompression": false,
+    "SkipSymbolPublish": false,
+    "SkipSymbolRecursive": false,
+    "SymbolServer": "\\\\symbols.intel.com\\test",
+    "SymbolsRootDir": "OWRBin",
+    "SymbolsToPublish": [
+        ".*Drivers.*\\.pdb"
+    ]
+},
+"Test": {
+    "FunctionalTestPackage": "package.zip",
+    "TestConfiguration": "TestConfig.json"
+},
+"Tools": [
+    {
+        "EWDKPlatform": "",
+        "_attribute_cache": {
+            "PACKAGEPATH": "C:\\OWR\\EWDK",
+            "path": "",
+            "version": "18362.19H1.737"
+        },
+        "_tool_class": "EWDK",
+        "additional_ingredients": [],
+        "artifact_manager": {
+            "cache_dir": "C:\\OWR\\CacheV2",
+            "debug": false,
+            "dry_run": false,
+            "password": "",
+            "server_url": "",
+            "username": "",
+            "wit": {
+                "_tool_class": "Wit",
+                "cache_dir": "C:\\OWR\\CacheV2",
+                "debug": false,
+                "dry_run": false,
+                "local_available": true,
+                "main_executable": "C:\\OWR\\Tools\\wit.exe",
+                "name": "wit",
+                "root_dir": "C:\\OWR\\Tools",
+                "version": "1.0.0.0"
+            }
+        },
+        "debug": false,
+        "ingredient_name": "EWDK",
+        "ingredient_type": 1,
+        "local_available": true,
+        "main_executable": "C:\\OWR\\EWDK\\EWDK-18362.19H1.737\\Program Files\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.20.27404\\bin\\Hostx64\\x64\\nmake.exe",
+        "manifest_path": "C:\\runner\\_work\\workspace\\src/windows\\manifest.xml",
+        "manifestdir": "C:\\runner\\_work\\workspace\\src/windows",
+        "manifestfile": "manifest.xml",
+        "name": "EWDK",
+        "path": "",
+        "pkg_path": "C:\\OWR\\EWDK",
+        "platform": "",
+        "root_dir": "C:\\OWR\\EWDK",
+        "version": "18362.19H1.737",
+        "wit": {
+            "_tool_class": "Wit",
+            "cache_dir": "C:\\OWR\\CacheV2",
+            "debug": false,
+            "dry_run": false,
+            "local_available": true,
+            "main_executable": "C:\\OWR\\Tools\\wit.exe",
+            "name": "wit",
+            "root_dir": "C:\\OWR\\Tools",
+            "version": "6.1.67.0"
+        }
+    },
+    {
+        "_attribute_cache": {
+            "PACKAGEPATH": "..\\Tools\\NugetCLI",
+            "path": "",
+            "version": "5.8.1"
+        },
+        "_tool_class": "NugetCLI",
+        "additional_ingredients": [],
+        "artifact_manager": {
+            "cache_dir": "C:\\OWR\\CacheV2",
+            "debug": false,
+            "dry_run": false,
+            "password": "",
+            "server_url": "",
+            "username": "",
+            "wit": {
+                "_tool_class": "Wit",
+                "cache_dir": "C:\\OWR\\CacheV2",
+                "debug": false,
+                "dry_run": false,
+                "local_available": true,
+                "main_executable": "C:\\OWR\\Tools\\wit.exe",
+                "name": "wit",
+                "root_dir": "C:\\OWR\\Tools",
+                "version": "1.0.0.0"
+            }
+        },
+        "debug": false,
+        "ingredient_name": "NugetCLI",
+        "ingredient_type": 1,
+        "local_available": true,
+        "main_executable": "C:\\Python38\\Lib\\Tools\\NugetCLI\\NugetCLI-5.8.1\\NugetCLI-5.8.1\\nuget.exe",
+        "manifest_path": "C:\\Python38\\lib\\site-packages\\manifest.xml",
+        "manifestdir": "C:\\Python38\\lib\\site-packages",
+        "manifestfile": "manifest.xml",
+        "name": "NugetCLI",
+        "path": "",
+        "pkg_path": "..\\Tools\\NugetCLI",
+        "platform": "",
+        "root_dir": "C:\\Python38\\lib\\site-packages\\..\\Tools\\NugetCLI",
+        "version": "5.8.1",
+        "wit": {
+            "_tool_class": "Wit",
+            "cache_dir": "C:\\OWR\\CacheV2",
+            "debug": false,
+            "dry_run": false,
+            "local_available": true,
+            "main_executable": "C:\\OWR\\Tools\\wit.exe",
+            "name": "wit",
+            "root_dir": "C:\\OWR\\Tools",
+            "version": "1.0.0.0"
+        }
+    }
+],
+"VulnerabilityScan": {
+    "ServerURL": "https://snyk.devtools.intel.com/api"
+},
+"tool_class_map": {
+    "Bandit": {},
+    "CCClient": {},
+    "CMake": {},
+    "CMakeLinux": {},
+    "CMakeWinContainer": {},
+    "CVEBinaryTool": {},
+    "Cabinetmaker": {},
+    "ClamAV": {},
+    "CodeQLCli": {},
+    "CodeQLQueries": {},
+    "Common.IngredientMetaData.Tool": {},
+    "Coverity": {},
+    "CoverityReports": {},
+    "DotNetCoreSDK": {},
+    "DumpBinTool": {},
+    "EWDK": {},
+    "EWDKSignTool": {},
+    "Handle": {},
+    "InfCheckTool": {},
+    "JDK": {},
+    "Klocwork": {},
+    "KlocworkScripts": {},
+    "McAfeeCLS": {},
+    "McAfeeCLS6": {},
+    "McAfeeDat": {},
+    "Metadata": {},
+    "NugetCLI": {},
+    "PDBCopy": {},
+    "Packager": {},
+    "Protex": {},
+    "ProtexSDK": {},
+    "ProtexScripts": {},
+    "PythonLNX": {},
+    "PythonOWR": {},
+    "Sigcheck": {},
+    "SignTool": {},
+    "Snyk": {},
+    "SnykToHtml": {},
+    "SymStore": {},
+    "dotnet": {},
+    "signfile": {},
+    "tOWR": {},
+    "wit": {}
+},
+"variables": {
+    "BinaryScan": {
+        "ScanDetailsURL": "",
+        "ScanID": "",
+        "ServerGroup": "6",
+        "ServerURL": "https://bdba001.icloud.intel.com",
+        "Upload": ""
+    },
+    "BuildInfo": {
+        "ABIVersion": "",
+        "ArtifactUrl": "",
+        "Branch": "",
+        "BuildEndTime": "",
+        "BuildJobUrl": "",
+        "BuildQuality": "",
+        "BuildStartTime": "",
+        "BuildType": "",
+        "CodeScanServerUrl": "",
+        "CodeScanServerVersion": "",
+        "CustomLibraryRepoUrl": "",
+        "FullName": "platform.Common.sw.win-driver.sample",
+        "GitServerUrl": "",
+        "IPScanServerUrl": "",
+        "IPScanServerVersion": "",
+        "Id": "",
+        "IngredientGitServerUrl": "",
+        "IngredientRevision": "",
+        "Name": "Sample",
+        "ReleaseNotes": "",
+        "ReleaseVersion": "",
+        "ReportUrls": [],
+        "Revision": "",
+        "SDL": [
+            {
+                "ID": "8976",
+                "Submitter": "***",
+                "URL": "https://sdl-e.app.intel.com/project?id=3e0f5f68-76b9-4129-823d-b68492c70f78"
+            }
+        ],
+        "ServerURL": "https://onebkc.intel.com",
+        "SignVersion": "",
+        "Type": "onebkc",
+        "Version": ""
+    },
+    "CabinetFile": {
+        "cab_files": [],
+        "cabinet_name_template": "SampleIngredient",
+        "directive_file": "",
+        "disk_directory_template": "CabFiles",
+        "output_path": "",
+        "output_root": "",
+        "source_path": "",
+        "variables": "UniqueFiles=NO,DestinationDir=Sample,CabinetFileCountThreshold=0,FolderFileCountThreshold=0,FolderSizeThreshold=0,MaxCabinetSize=0,MaxDiskFileCount=0,MaxDiskSize=0"
+    },
+    "Configuration": "Release",
+    "Coverity": {
+        "CompilerTemplates": [],
+        "IgnoreFiles": [],
+        "ServerURL": "https://coverityent-pilot3.devtools.intel.com",
+        "SkipCoverityScan": false,
+        "Stream": ""
+    },
+    "DeployCustomPath": "",
+    "DeployCustomServer": "",
+    "DeployToOWR": "",
+    "Description": "OWR ABI Project File for DCHU Sample ingredient",
+    "EWDKPlatform": "",
+    "ErrorHandling": {
+        "ConsoleLogLevel": "",
+        "FileLogLevel": "",
+        "FileLogPath": "",
+        "SentryCaptureLevel": "",
+        "SentryEventLevel": "",
+        "SentryUrl": ""
+    },
+    "Errors": [],
+    "IngredientName": "Sample",
+    "IngredientPath": "src/windows",
+    "IngredientVersion": "9.3.15.598",
+    "Klocwork": {
+        "BuildId": "Sample_9.3.15.598",
+        "BuildURL": "",
+        "IgnoreFiles": "",
+        "KLOCWORK_LTOKEN": "",
+        "LicenseHost": "klocwork05p.elic.intel.com",
+        "LicensePort": "7500",
+        "OnErrorContinueAnalysis": "",
+        "OverWriteDuplicates": "",
+        "Project": "osrfx2",
+        "ServerPort": "8105",
+        "ServerURL": "https://klocwork-jf7.devtools.intel.com",
+        "SkipKlocworkScan": false,
+        "Type": "",
+        "sync_mode": ""
+    },
+    "KlocworkContext": {
+        "BuildSpecificationsPath": "",
+        "RunKlocworkScan": false,
+        "kwcsprojparserExe": "",
+        "kwinjectExe": ""
+    },
+    "Mtcd": {
+        "backoff_factor": [
+            [
+                "backoff_factor"
+            ]
+        ],
+        "client_id": "",
+        "device_type": "internal",
+        "download_type": "",
+        "output_file": "",
+        "product_id": "",
+        "product_name": "sample_product",
+        "product_template": "",
+        "product_variables": "",
+        "requested_signatures": [
+            "WINDOWS_v100_X64_NI_FULL"
+        ],
+        "retries": "",
+        "selected_product_types": "",
+        "server_url": "https://mtcdevops.intel.com",
+        "submission_files": [],
+        "submission_id": "",
+        "submission_name": "Sample_Attest_Submission",
+        "submission_template": "",
+        "submission_type": "initial",
+        "submission_variables": "",
+        "tenant_id": "",
+        "test_harness": "Attestation",
+        "test_signed": false
+    },
+    "OutputConfiguration": "PackageGen.json",
+    "OutputDir": "OWRBuild",
+    "OutputRoot": "OWRBin",
+    "Outputs": [
+        {
+            "ReportFile": [
+                "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\output\\analysis-log.txt",
+                "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\coverity_snapshot-ABI_TestingCoverity-Plugin.id.txt"
+            ],
+            "SnapshotId": "21625",
+            "TimeStamp": "2022-11-09 18:12:26",
+            "Type": "CoverityScan",
+            "Version": ""
+        },
+        {
+            "ReportFile": [
+                "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-result_ABI_TestingCoverity-Plugin.json",
+                "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-result_ABI_TestingCoverity-Plugin.csv",
+                "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-snapshot_ABI_TestingCoverity-Plugin.json",
+                "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-result_ABI_TestingCoverity-Plugin.pdf",
+                "C:\\runner\\_work\\workspace\\src\\windows\\OWRBuild\\cov-int_ABI_TestingCoverity-Plugin\\ABI_TestingCoverity-Plugin\\coverity-report-result_ABI_TestingCoverity-Plugin.zip"
+            ],
+            "SnapshotId": "21625",
+            "TimeStamp": "2022-11-09 18:22:39",
+            "Type": "CoverityScan",
+            "Version": ""
+        }
+    ],
+    "PackageMetadataTemplate": "PackageMetadataTemplate.json",
+    "PackageRoot": "OWRPackage",
+    "Platform": "x64",
+    "Protex": {
+        "output_dir": "",
+        "projects": [
+            {
+                "OutputConfiguration": "",
+                "ProjectID": "c_osrfx2-sample-test_22087",
+                "Server": "https://amrprotex006.devtools.intel.com",
+                "TargetPath": ""
+            },
+            {
+                "OutputConfiguration": "",
+                "ProjectID": "c_osrfx2-sample_18434",
+                "Server": "https://amrprotex006.devtools.intel.com",
+                "TargetPath": ""
+            }
+        ]
+    },
+    "RootDir": "C:\\runner\\_work\\workspace",
+    "SchemaVersion": "1.0",
+    "Sign": {
+        "AdditionalFlags": "",
+        "FailOnMissingFile": true,
+        "Operations": [
+            {
+                "AdditionalFlags": "",
+                "Certificate": "OWR-EV-20",
+                "CertificateHash": "",
+                "CrossSign": true,
+                "FailOnMissingFile": true,
+                "Files": [
+                    "Apps.*osrfx2_DCHU_usersvc.exe",
+                    "Drivers.*osrfx2_DCHU_base.dll",
+                    "Drivers.*osrfx2_DCHU_filter.dll",
+                    "Drivers.*osrfx2_DCHU_usersvc.exe",
+                    "Drivers.*osrfx2_dchu_base.cat"
+                ],
+                "HashAlgorithm": "SHA256",
+                "Name": "Driver",
+                "SignRootDir": "OWRBin"
+            },
+            {
+                "AdditionalFlags": "",
+                "Certificate": "INTEL_CORP",
+                "CertificateHash": "",
+                "CrossSign": true,
+                "FailOnMissingFile": true,
+                "Files": [
+                    "CabFiles.*Sample.*.cab"
+                ],
+                "HashAlgorithm": "SHA256",
+                "Name": "CabFiles",
+                "SignRootDir": "OWRPackage"
+            }
+        ],
+        "SignRootDir": "OWRBin"
+    },
+    "StaticSecurityScan": {
+        "DashboardURL": "",
+        "IsPublic": true,
+        "ProjectID": "329381",
+        "ScanID": "",
+        "ServerURL": "https://sast.intel.com"
+    },
+    "SubComponents": [
+        {
+            "AdditionalEnvVars": "",
+            "AdditionalFlags": "",
+            "BuildTarget": "",
+            "CMakeConfigureFlags": "",
+            "CleanTarget": "",
+            "Coverity": {
+                "CompilerTemplates": [
+                    "cs",
+                    "msvc"
+                ],
+                "IgnoreFiles": [],
+                "SkipCoverityScan": false,
+                "Stream": "ABI_TestingCoverity-Plugin"
+            },
+            "Description": "WindowsDriver Sample DCHU Base Driver",
+            "DotNetCommand": "",
+            "DotNetFrameWork": "",
+            "DotNetRuntime": "",
+            "Klocwork": {
+                "BuildId": "",
+                "BuildURL": "",
+                "IgnoreFiles": "",
+                "KLOCWORK_LTOKEN": "",
+                "LicenseHost": "",
+                "LicensePort": "",
+                "OnErrorContinueAnalysis": "",
+                "OverWriteDuplicates": "",
+                "Project": "osrfx2",
+                "ServerPort": "",
+                "ServerURL": "",
+                "SkipKlocworkScan": false,
+                "Type": "cpp",
+                "sync_mode": ""
+            },
+            "MSBuildVersionProperty": "OWRBuildVersion",
+            "Name": "BaseDriver",
+            "NmakeMacros": "",
+            "NugetArgs": "C:\\runner\\_work\\workspace\\src/windows\\WindowsDriver_DCHU_base\\osrfx2_DCHU_base.sln",
+            "NugetCommand": "restore",
+            "PostBuildSteps": [
+                {
+                    "PostBuildCmd": "pwd",
+                    "PostBuildEnvVars": ""
+                }
+            ],
+            "ProjectFile": "WindowsDriver_DCHU_base\\osrfx2_DCHU_base.sln",
+            "ProjectType": "MSBuild",
+            "ScriptArgs": "",
+            "Semmle": {
+                "ReportType": [
+                    "sarifv2",
+                    "csv"
+                ],
+                "Type": "cpp"
+            },
+            "Sign": false,
+            "SingleThreadOnly": "",
+            "Symbols": false,
+            "Verbosity": true,
+            "WorkingDirectory": "",
+            "sync_mode": true
+        },
+        {
+            "AdditionalEnvVars": "",
+            "AdditionalFlags": " -- /m /flp:logfile=CMakeApp.log",
+            "BuildTarget": "",
+            "CMakeConfigureFlags": "",
+            "CleanTarget": "",
+            "Coverity": false,
+            "Description": "CMake Sample C App",
+            "DotNetCommand": "",
+            "DotNetFrameWork": "",
+            "DotNetRuntime": "",
+            "Klocwork": {
+                "BuildId": "",
+                "BuildURL": "",
+                "IgnoreFiles": "",
+                "KLOCWORK_LTOKEN": "",
+                "LicenseHost": "",
+                "LicensePort": "",
+                "OnErrorContinueAnalysis": "",
+                "OverWriteDuplicates": "",
+                "Project": "osrfx2",
+                "ServerPort": "",
+                "ServerURL": "",
+                "SkipKlocworkScan": false,
+                "Type": "cpp",
+                "sync_mode": ""
+            },
+            "MSBuildVersionProperty": "",
+            "Name": "CMakeApp",
+            "NmakeMacros": "",
+            "NugetArgs": "",
+            "NugetCommand": "",
+            "PostBuildSteps": [],
+            "ProjectFile": "CMakeApp",
+            "ProjectType": "CMake",
+            "ScriptArgs": "",
+            "Semmle": false,
+            "Sign": false,
+            "SingleThreadOnly": "",
+            "Symbols": false,
+            "Verbosity": "",
+            "WorkingDirectory": "",
+            "sync_mode": true
+        },
+        {
+            "AdditionalEnvVars": "",
+            "AdditionalFlags": "/B /C",
+            "BuildTarget": "foo",
+            "CMakeConfigureFlags": "",
+            "CleanTarget": "",
+            "Coverity": {
+                "CompilerTemplates": [],
+                "IgnoreFiles": [],
+                "SkipCoverityScan": false,
+                "Stream": "ABI_TestingCoverity-Plugin"
+            },
+            "Description": "Nmake sample",
+            "DotNetCommand": "",
+            "DotNetFrameWork": "",
+            "DotNetRuntime": "",
+            "Klocwork": {
+                "BuildId": "",
+                "BuildURL": "",
+                "IgnoreFiles": "",
+                "KLOCWORK_LTOKEN": "",
+                "LicenseHost": "",
+                "LicensePort": "",
+                "OnErrorContinueAnalysis": "",
+                "OverWriteDuplicates": "",
+                "Project": "osrfx2",
+                "ServerPort": "",
+                "ServerURL": "",
+                "SkipKlocworkScan": true,
+                "Type": "cpp",
+                "sync_mode": ""
+            },
+            "MSBuildVersionProperty": "",
+            "Name": "Nmake",
+            "NmakeMacros": "project = sample",
+            "NugetArgs": "",
+            "NugetCommand": "",
+            "PostBuildSteps": [],
+            "ProjectFile": "nmake\\makefile",
+            "ProjectType": "nmake",
+            "ScriptArgs": "",
+            "Semmle": false,
+            "Sign": false,
+            "SingleThreadOnly": "",
+            "Symbols": false,
+            "Verbosity": "",
+            "WorkingDirectory": "",
+            "sync_mode": true
+        },
+        {
+            "AdditionalEnvVars": "",
+            "AdditionalFlags": "",
+            "BuildTarget": "",
+            "CMakeConfigureFlags": "",
+            "CleanTarget": "",
+            "Coverity": false,
+            "Description": "Sample Python Script",
+            "DotNetCommand": "",
+            "DotNetFrameWork": "",
+            "DotNetRuntime": "",
+            "Klocwork": {
+                "BuildId": "",
+                "BuildURL": "",
+                "IgnoreFiles": "",
+                "KLOCWORK_LTOKEN": "",
+                "LicenseHost": "",
+                "LicensePort": "",
+                "OnErrorContinueAnalysis": "",
+                "OverWriteDuplicates": "",
+                "Project": "",
+                "ServerPort": "",
+                "ServerURL": "",
+                "SkipKlocworkScan": true,
+                "Type": "",
+                "sync_mode": ""
+            },
+            "MSBuildVersionProperty": "",
+            "Name": "ScriptTest",
+            "NmakeMacros": "",
+            "NugetArgs": "",
+            "NugetCommand": "",
+            "PostBuildSteps": [],
+            "ProjectFile": "script_test.py",
+            "ProjectType": "Script",
+            "ScriptArgs": "",
+            "Semmle": false,
+            "Sign": false,
+            "SingleThreadOnly": "",
+            "Symbols": false,
+            "Verbosity": "",
+            "WorkingDirectory": "ScriptTest",
+            "sync_mode": true
+        },
+        {
+            "AdditionalEnvVars": "",
+            "AdditionalFlags": "",
+            "BuildTarget": "",
+            "CMakeConfigureFlags": "",
+            "CleanTarget": "",
+            "Coverity": false,
+            "Description": "Sample Python App",
+            "DotNetCommand": "",
+            "DotNetFrameWork": "",
+            "DotNetRuntime": "",
+            "Klocwork": {
+                "BuildId": "",
+                "BuildURL": "",
+                "IgnoreFiles": "",
+                "KLOCWORK_LTOKEN": "",
+                "LicenseHost": "",
+                "LicensePort": "",
+                "OnErrorContinueAnalysis": "",
+                "OverWriteDuplicates": "",
+                "Project": "",
+                "ServerPort": "",
+                "ServerURL": "",
+                "SkipKlocworkScan": true,
+                "Type": "",
+                "sync_mode": ""
+            },
+            "MSBuildVersionProperty": "",
+            "Name": "PythonApp",
+            "NmakeMacros": "",
+            "NugetArgs": "",
+            "NugetCommand": "",
+            "PostBuildSteps": [],
+            "ProjectFile": "PythonApp.py",
+            "ProjectType": "Script",
+            "ScriptArgs": "",
+            "Semmle": false,
+            "Sign": false,
+            "SingleThreadOnly": "",
+            "Symbols": false,
+            "Verbosity": "",
+            "WorkingDirectory": "PythonApp",
+            "sync_mode": true
+        },
+        {
+            "AdditionalEnvVars": "",
+            "AdditionalFlags": "",
+            "BuildTarget": "DotNetFrameWorkApp",
+            "CMakeConfigureFlags": "",
+            "CleanTarget": "",
+            "Coverity": false,
+            "Description": "DotNetFrameWork Test App",
+            "DotNetCommand": "",
+            "DotNetFrameWork": "",
+            "DotNetRuntime": "",
+            "Klocwork": false,
+            "MSBuildVersionProperty": "",
+            "Name": "DotNetFrameWorkApp",
+            "NmakeMacros": "",
+            "NugetArgs": "",
+            "NugetCommand": "",
+            "PostBuildSteps": [],
+            "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameWorkApp.sln",
+            "ProjectType": "MSBuild",
+            "ScriptArgs": "",
+            "Semmle": false,
+            "Sign": {
+                "AdditionalFlags": "",
+                "FailOnMissingFile": true,
+                "Operations": [
+                    {
+                        "AdditionalFlags": "",
+                        "Certificate": "OWR-EV-20",
+                        "CertificateHash": "",
+                        "CrossSign": true,
+                        "FailOnMissingFile": true,
+                        "Files": [
+                            "Apps.*DotNetFrameWorkApp.exe"
+                        ],
+                        "HashAlgorithm": "SHA256",
+                        "Name": "Apps",
+                        "SignRootDir": "OWRBin"
+                    }
+                ],
+                "SignRootDir": "OWRBin"
+            },
+            "SingleThreadOnly": "",
+            "Symbols": false,
+            "Verbosity": "",
+            "WorkingDirectory": "",
+            "sync_mode": true
+        },
+        {
+            "AdditionalEnvVars": "",
+            "AdditionalFlags": "",
+            "BuildTarget": "DotNetCoreAppWithFrameworkAppFile",
+            "CMakeConfigureFlags": "",
+            "CleanTarget": "",
+            "Coverity": false,
+            "Description": "DotNetCoreApp Test App using DotNetFramework file",
+            "DotNetCommand": "",
+            "DotNetFrameWork": "",
+            "DotNetRuntime": "",
+            "Klocwork": {
+                "BuildId": "",
+                "BuildURL": "",
+                "IgnoreFiles": "",
+                "KLOCWORK_LTOKEN": "",
+                "LicenseHost": "",
+                "LicensePort": "",
+                "OnErrorContinueAnalysis": "",
+                "OverWriteDuplicates": "",
+                "Project": "osrfx2_2",
+                "ServerPort": "",
+                "ServerURL": "",
+                "SkipKlocworkScan": false,
+                "Type": "csharp",
+                "sync_mode": ""
+            },
+            "MSBuildVersionProperty": "",
+            "Name": "DotNetCoreAppWithFrameworkAppFile",
+            "NmakeMacros": "",
+            "NugetArgs": "",
+            "NugetCommand": "",
+            "PostBuildSteps": [],
+            "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameworkApp.csproj",
+            "ProjectType": "dotnetcore",
+            "ScriptArgs": "",
+            "Semmle": false,
+            "Sign": false,
+            "SingleThreadOnly": "",
+            "Symbols": false,
+            "Verbosity": "",
+            "WorkingDirectory": "",
+            "sync_mode": true
+        },
+        {
+            "AdditionalEnvVars": "",
+            "AdditionalFlags": "fu bar",
+            "BuildTarget": "",
+            "CMakeConfigureFlags": "",
+            "CleanTarget": "",
+            "Coverity": false,
+            "Description": "Custom Script Exe Test",
+            "DotNetCommand": "",
+            "DotNetFrameWork": "",
+            "DotNetRuntime": "",
+            "Klocwork": {
+                "BuildId": "",
+                "BuildURL": "",
+                "IgnoreFiles": "",
+                "KLOCWORK_LTOKEN": "",
+                "LicenseHost": "",
+                "LicensePort": "",
+                "OnErrorContinueAnalysis": "",
+                "OverWriteDuplicates": "",
+                "Project": "",
+                "ServerPort": "",
+                "ServerURL": "",
+                "SkipKlocworkScan": true,
+                "Type": "",
+                "sync_mode": ""
+            },
+            "MSBuildVersionProperty": "",
+            "Name": "ExeScriptTest",
+            "NmakeMacros": "",
+            "NugetArgs": "",
+            "NugetCommand": "",
+            "PostBuildSteps": [],
+            "ProjectFile": "DotNetFrameWorkApp\\Output\\DotNetFrameWorkApp.exe",
+            "ProjectType": "Script",
+            "ScriptArgs": "",
+            "Semmle": false,
+            "Sign": false,
+            "SingleThreadOnly": "",
+            "Symbols": false,
+            "Verbosity": "",
+            "WorkingDirectory": "",
+            "sync_mode": true
+        }
+    ],
+    "Symbols": {
+        "AdditionalFlags": "",
+        "PublicSymbolPatterns": {
+            ".*Drivers.*\\.pdb": "Public\\"
+        },
+        "SkipSymbolCompression": false,
+        "SkipSymbolPublish": false,
+        "SkipSymbolRecursive": false,
+        "SymbolServer": "\\\\symbols.intel.com\\test",
+        "SymbolsRootDir": "OWRBin",
+        "SymbolsToPublish": [
+            ".*Drivers.*\\.pdb"
+        ]
+    },
+    "Test": {
+        "FunctionalTestPackage": "package.zip",
+        "TestConfiguration": "TestConfig.json"
+    },
+    "Tools": [
+        {
+            "EWDKPlatform": "",
+            "_attribute_cache": {
+                "PACKAGEPATH": "C:\\OWR\\EWDK",
+                "path": "",
+                "version": "18362.19H1.737"
+            },
+            "_tool_class": "EWDK",
+            "additional_ingredients": [],
+            "artifact_manager": {
+                "cache_dir": "C:\\OWR\\CacheV2",
+                "debug": false,
+                "dry_run": false,
+                "password": "",
+                "server_url": "",
+                "username": "",
+                "wit": {
+                    "_tool_class": "Wit",
+                    "cache_dir": "C:\\OWR\\CacheV2",
+                    "debug": false,
+                    "dry_run": false,
+                    "local_available": true,
+                    "main_executable": "C:\\OWR\\Tools\\wit.exe",
+                    "name": "wit",
+                    "root_dir": "C:\\OWR\\Tools",
+                    "version": "1.0.0.0"
+                }
+            },
+            "debug": false,
+            "ingredient_name": "EWDK",
+            "ingredient_type": 1,
+            "local_available": true,
+            "main_executable": "C:\\OWR\\EWDK\\EWDK-18362.19H1.737\\Program Files\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.20.27404\\bin\\Hostx64\\x64\\nmake.exe",
+            "manifest_path": "C:\\runner\\_work\\workspace\\src/windows\\manifest.xml",
+            "manifestdir": "C:\\runner\\_work\\workspace\\src/windows",
+            "manifestfile": "manifest.xml",
+            "name": "EWDK",
+            "path": "",
+            "pkg_path": "C:\\OWR\\EWDK",
+            "platform": "",
+            "root_dir": "C:\\OWR\\EWDK",
+            "version": "18362.19H1.737",
+            "wit": {
+                "_tool_class": "Wit",
+                "cache_dir": "C:\\OWR\\CacheV2",
+                "debug": false,
+                "dry_run": false,
+                "local_available": true,
+                "main_executable": "C:\\OWR\\Tools\\wit.exe",
+                "name": "wit",
+                "root_dir": "C:\\OWR\\Tools",
+                "version": "6.1.67.0"
+            }
+        },
+        {
+            "_attribute_cache": {
+                "PACKAGEPATH": "..\\Tools\\NugetCLI",
+                "path": "",
+                "version": "5.8.1"
+            },
+            "_tool_class": "NugetCLI",
+            "additional_ingredients": [],
+            "artifact_manager": {
+                "cache_dir": "C:\\OWR\\CacheV2",
+                "debug": false,
+                "dry_run": false,
+                "password": "",
+                "server_url": "",
+                "username": "",
+                "wit": {
+                    "_tool_class": "Wit",
+                    "cache_dir": "C:\\OWR\\CacheV2",
+                    "debug": false,
+                    "dry_run": false,
+                    "local_available": true,
+                    "main_executable": "C:\\OWR\\Tools\\wit.exe",
+                    "name": "wit",
+                    "root_dir": "C:\\OWR\\Tools",
+                    "version": "1.0.0.0"
+                }
+            },
+            "debug": false,
+            "ingredient_name": "NugetCLI",
+            "ingredient_type": 1,
+            "local_available": true,
+            "main_executable": "C:\\Python38\\Lib\\Tools\\NugetCLI\\NugetCLI-5.8.1\\NugetCLI-5.8.1\\nuget.exe",
+            "manifest_path": "C:\\Python38\\lib\\site-packages\\manifest.xml",
+            "manifestdir": "C:\\Python38\\lib\\site-packages",
+            "manifestfile": "manifest.xml",
+            "name": "NugetCLI",
+            "path": "",
+            "pkg_path": "..\\Tools\\NugetCLI",
+            "platform": "",
+            "root_dir": "C:\\Python38\\lib\\site-packages\\..\\Tools\\NugetCLI",
+            "version": "5.8.1",
+            "wit": {
+                "_tool_class": "Wit",
+                "cache_dir": "C:\\OWR\\CacheV2",
+                "debug": false,
+                "dry_run": false,
+                "local_available": true,
+                "main_executable": "C:\\OWR\\Tools\\wit.exe",
+                "name": "wit",
+                "root_dir": "C:\\OWR\\Tools",
+                "version": "1.0.0.0"
+            }
+        }
+    ],
+    "VulnerabilityScan": {
+        "ServerURL": "https://snyk.devtools.intel.com/api"
+    },
+    "tool_class_map": {},
+    "variables": {
+        "BinaryScan": {
+            "ScanDetailsURL": "",
+            "ScanID": "",
+            "ServerGroup": "6",
+            "ServerURL": "https://bdba001.icloud.intel.com",
+            "Upload": ""
+        },
+        "BuildInfo": {
+            "ABIVersion": "",
+            "ArtifactUrl": "",
+            "Branch": "",
+            "BuildEndTime": "",
+            "BuildJobUrl": "",
+            "BuildQuality": "",
+            "BuildStartTime": "",
+            "BuildType": "",
+            "CodeScanServerUrl": "",
+            "CodeScanServerVersion": "",
+            "CustomLibraryRepoUrl": "",
+            "FullName": "platform.Common.sw.win-driver.sample",
+            "GitServerUrl": "",
+            "IPScanServerUrl": "",
+            "IPScanServerVersion": "",
+            "Id": "",
+            "IngredientGitServerUrl": "",
+            "IngredientRevision": "",
+            "Name": "Sample",
+            "ReleaseNotes": "",
+            "ReleaseVersion": "",
+            "ReportUrls": [],
+            "Revision": "",
+            "SDL": [
+                {
+                    "ID": "8976",
+                    "Submitter": "***",
+                    "URL": "https://sdl-e.app.intel.com/project?id=3e0f5f68-76b9-4129-823d-b68492c70f78"
+                }
+            ],
+            "ServerURL": "https://onebkc.intel.com",
+            "SignVersion": "",
+            "Type": "onebkc",
+            "Version": ""
+        },
+        "CabinetFile": {
+            "cab_files": [],
+            "cabinet_name_template": "SampleIngredient",
+            "directive_file": "",
+            "disk_directory_template": "CabFiles",
+            "output_path": "",
+            "output_root": "",
+            "source_path": "",
+            "variables": "UniqueFiles=NO,DestinationDir=Sample,CabinetFileCountThreshold=0,FolderFileCountThreshold=0,FolderSizeThreshold=0,MaxCabinetSize=0,MaxDiskFileCount=0,MaxDiskSize=0"
+        },
+        "Configuration": "Release",
+        "Coverity": {
+            "CompilerTemplates": [],
+            "IgnoreFiles": [],
+            "ServerURL": "https://coverityent-pilot3.devtools.intel.com",
+            "SkipCoverityScan": false,
+            "Stream": ""
+        },
+        "DeployCustomPath": "",
+        "DeployCustomServer": "",
+        "DeployToOWR": "",
+        "Description": "OWR ABI Project File for DCHU Sample ingredient",
+        "EWDKPlatform": "",
+        "ErrorHandling": {
+            "ConsoleLogLevel": "",
+            "FileLogLevel": "",
+            "FileLogPath": "",
+            "SentryCaptureLevel": "",
+            "SentryEventLevel": "",
+            "SentryUrl": ""
+        },
+        "Errors": [],
+        "IngredientName": "Sample",
+        "IngredientPath": "src/windows",
+        "IngredientVersion": "9.3.15.598",
+        "Klocwork": {
+            "BuildId": "Sample_9.3.15.598",
+            "BuildURL": "",
+            "IgnoreFiles": "",
+            "KLOCWORK_LTOKEN": "",
+            "LicenseHost": "klocwork05p.elic.intel.com",
+            "LicensePort": "7500",
+            "OnErrorContinueAnalysis": "",
+            "OverWriteDuplicates": "",
+            "Project": "osrfx2",
+            "ServerPort": "8105",
+            "ServerURL": "https://klocwork-jf7.devtools.intel.com",
+            "SkipKlocworkScan": false,
+            "Type": "",
+            "sync_mode": ""
+        },
+        "KlocworkContext": {
+            "BuildSpecificationsPath": "",
+            "RunKlocworkScan": false,
+            "kwcsprojparserExe": "",
+            "kwinjectExe": ""
+        },
+        "Mtcd": {
+            "backoff_factor": [
+                [
+                    "backoff_factor"
+                ]
+            ],
+            "client_id": "",
+            "device_type": "internal",
+            "download_type": "",
+            "output_file": "",
+            "product_id": "",
+            "product_name": "sample_product",
+            "product_template": "",
+            "product_variables": "",
+            "requested_signatures": [
+                "WINDOWS_v100_X64_NI_FULL"
+            ],
+            "retries": "",
+            "selected_product_types": "",
+            "server_url": "https://mtcdevops.intel.com",
+            "submission_files": [],
+            "submission_id": "",
+            "submission_name": "Sample_Attest_Submission",
+            "submission_template": "",
+            "submission_type": "initial",
+            "submission_variables": "",
+            "tenant_id": "",
+            "test_harness": "Attestation",
+            "test_signed": false
+        },
+        "OutputConfiguration": "PackageGen.json",
+        "OutputDir": "OWRBuild",
+        "OutputRoot": "OWRBin",
+        "Outputs": [],
+        "PackageMetadataTemplate": "PackageMetadataTemplate.json",
+        "PackageRoot": "OWRPackage",
+        "Platform": "x64",
+        "Protex": {
+            "output_dir": "",
+            "projects": [
+                {
+                    "OutputConfiguration": "",
+                    "ProjectID": "c_osrfx2-sample-test_22087",
+                    "Server": "https://amrprotex006.devtools.intel.com",
+                    "TargetPath": ""
+                },
+                {
+                    "OutputConfiguration": "",
+                    "ProjectID": "c_osrfx2-sample_18434",
+                    "Server": "https://amrprotex006.devtools.intel.com",
+                    "TargetPath": ""
+                }
+            ]
+        },
+        "RootDir": "C:\\runner\\_work\\workspace",
+        "SchemaVersion": "1.0",
+        "Sign": {
+            "AdditionalFlags": "",
+            "FailOnMissingFile": true,
+            "Operations": [
+                {
+                    "AdditionalFlags": "",
+                    "Certificate": "OWR-EV-20",
+                    "CertificateHash": "",
+                    "CrossSign": true,
+                    "FailOnMissingFile": true,
+                    "Files": [
+                        "Apps.*osrfx2_DCHU_usersvc.exe",
+                        "Drivers.*osrfx2_DCHU_base.dll",
+                        "Drivers.*osrfx2_DCHU_filter.dll",
+                        "Drivers.*osrfx2_DCHU_usersvc.exe",
+                        "Drivers.*osrfx2_dchu_base.cat"
+                    ],
+                    "HashAlgorithm": "SHA256",
+                    "Name": "Driver",
+                    "SignRootDir": "OWRBin"
+                },
+                {
+                    "AdditionalFlags": "",
+                    "Certificate": "INTEL_CORP",
+                    "CertificateHash": "",
+                    "CrossSign": true,
+                    "FailOnMissingFile": true,
+                    "Files": [
+                        "CabFiles.*Sample.*.cab"
+                    ],
+                    "HashAlgorithm": "SHA256",
+                    "Name": "CabFiles",
+                    "SignRootDir": "OWRPackage"
+                }
+            ],
+            "SignRootDir": "OWRBin"
+        },
+        "StaticSecurityScan": {
+            "DashboardURL": "",
+            "IsPublic": true,
+            "ProjectID": "329381",
+            "ScanID": "",
+            "ServerURL": "https://sast.intel.com"
+        },
+        "SubComponents": [
+            {
+                "AdditionalEnvVars": "",
+                "AdditionalFlags": "",
+                "BuildTarget": "",
+                "CMakeConfigureFlags": "",
+                "CleanTarget": "",
+                "Coverity": {
+                    "CompilerTemplates": [
+                        "cs",
+                        "msvc"
+                    ],
+                    "IgnoreFiles": [],
+                    "SkipCoverityScan": false,
+                    "Stream": "ABI_TestingCoverity-Plugin"
+                },
+                "Description": "WindowsDriver Sample DCHU Base Driver",
+                "DotNetCommand": "",
+                "DotNetFrameWork": "",
+                "DotNetRuntime": "",
+                "Klocwork": {
+                    "BuildId": "",
+                    "BuildURL": "",
+                    "IgnoreFiles": "",
+                    "KLOCWORK_LTOKEN": "",
+                    "LicenseHost": "",
+                    "LicensePort": "",
+                    "OnErrorContinueAnalysis": "",
+                    "OverWriteDuplicates": "",
+                    "Project": "osrfx2",
+                    "ServerPort": "",
+                    "ServerURL": "",
+                    "SkipKlocworkScan": false,
+                    "Type": "cpp",
+                    "sync_mode": ""
+                },
+                "MSBuildVersionProperty": "OWRBuildVersion",
+                "Name": "BaseDriver",
+                "NmakeMacros": "",
+                "NugetArgs": "",
+                "NugetCommand": "restore",
+                "PostBuildSteps": [
+                    {
+                        "PostBuildCmd": "pwd",
+                        "PostBuildEnvVars": ""
+                    }
+                ],
+                "ProjectFile": "WindowsDriver_DCHU_base\\osrfx2_DCHU_base.sln",
+                "ProjectType": "MSBuild",
+                "ScriptArgs": "",
+                "Semmle": {
+                    "ReportType": [
+                        "sarifv2",
+                        "csv"
+                    ],
+                    "Type": "cpp"
+                },
+                "Sign": false,
+                "SingleThreadOnly": "",
+                "Symbols": false,
+                "Verbosity": true,
+                "WorkingDirectory": "",
+                "sync_mode": true
+            },
+            {
+                "AdditionalEnvVars": "",
+                "AdditionalFlags": " -- /m /flp:logfile=CMakeApp.log",
+                "BuildTarget": "",
+                "CMakeConfigureFlags": "",
+                "CleanTarget": "",
+                "Coverity": false,
+                "Description": "CMake Sample C App",
+                "DotNetCommand": "",
+                "DotNetFrameWork": "",
+                "DotNetRuntime": "",
+                "Klocwork": {
+                    "BuildId": "",
+                    "BuildURL": "",
+                    "IgnoreFiles": "",
+                    "KLOCWORK_LTOKEN": "",
+                    "LicenseHost": "",
+                    "LicensePort": "",
+                    "OnErrorContinueAnalysis": "",
+                    "OverWriteDuplicates": "",
+                    "Project": "osrfx2",
+                    "ServerPort": "",
+                    "ServerURL": "",
+                    "SkipKlocworkScan": false,
+                    "Type": "cpp",
+                    "sync_mode": ""
+                },
+                "MSBuildVersionProperty": "",
+                "Name": "CMakeApp",
+                "NmakeMacros": "",
+                "NugetArgs": "",
+                "NugetCommand": "",
+                "PostBuildSteps": [],
+                "ProjectFile": "CMakeApp",
+                "ProjectType": "CMake",
+                "ScriptArgs": "",
+                "Semmle": false,
+                "Sign": false,
+                "SingleThreadOnly": "",
+                "Symbols": false,
+                "Verbosity": "",
+                "WorkingDirectory": "",
+                "sync_mode": true
+            },
+            {
+                "AdditionalEnvVars": "",
+                "AdditionalFlags": "/B /C",
+                "BuildTarget": "foo",
+                "CMakeConfigureFlags": "",
+                "CleanTarget": "",
+                "Coverity": {
+                    "CompilerTemplates": [],
+                    "IgnoreFiles": [],
+                    "SkipCoverityScan": false,
+                    "Stream": "ABI_TestingCoverity-Plugin"
+                },
+                "Description": "Nmake sample",
+                "DotNetCommand": "",
+                "DotNetFrameWork": "",
+                "DotNetRuntime": "",
+                "Klocwork": {
+                    "BuildId": "",
+                    "BuildURL": "",
+                    "IgnoreFiles": "",
+                    "KLOCWORK_LTOKEN": "",
+                    "LicenseHost": "",
+                    "LicensePort": "",
+                    "OnErrorContinueAnalysis": "",
+                    "OverWriteDuplicates": "",
+                    "Project": "osrfx2",
+                    "ServerPort": "",
+                    "ServerURL": "",
+                    "SkipKlocworkScan": true,
+                    "Type": "cpp",
+                    "sync_mode": ""
+                },
+                "MSBuildVersionProperty": "",
+                "Name": "Nmake",
+                "NmakeMacros": "project = sample",
+                "NugetArgs": "",
+                "NugetCommand": "",
+                "PostBuildSteps": [],
+                "ProjectFile": "nmake\\makefile",
+                "ProjectType": "nmake",
+                "ScriptArgs": "",
+                "Semmle": false,
+                "Sign": false,
+                "SingleThreadOnly": "",
+                "Symbols": false,
+                "Verbosity": "",
+                "WorkingDirectory": "",
+                "sync_mode": true
+            },
+            {
+                "AdditionalEnvVars": "",
+                "AdditionalFlags": "",
+                "BuildTarget": "",
+                "CMakeConfigureFlags": "",
+                "CleanTarget": "",
+                "Coverity": false,
+                "Description": "Sample Python Script",
+                "DotNetCommand": "",
+                "DotNetFrameWork": "",
+                "DotNetRuntime": "",
+                "Klocwork": {
+                    "BuildId": "",
+                    "BuildURL": "",
+                    "IgnoreFiles": "",
+                    "KLOCWORK_LTOKEN": "",
+                    "LicenseHost": "",
+                    "LicensePort": "",
+                    "OnErrorContinueAnalysis": "",
+                    "OverWriteDuplicates": "",
+                    "Project": "",
+                    "ServerPort": "",
+                    "ServerURL": "",
+                    "SkipKlocworkScan": true,
+                    "Type": "",
+                    "sync_mode": ""
+                },
+                "MSBuildVersionProperty": "",
+                "Name": "ScriptTest",
+                "NmakeMacros": "",
+                "NugetArgs": "",
+                "NugetCommand": "",
+                "PostBuildSteps": [],
+                "ProjectFile": "script_test.py",
+                "ProjectType": "Script",
+                "ScriptArgs": "",
+                "Semmle": false,
+                "Sign": false,
+                "SingleThreadOnly": "",
+                "Symbols": false,
+                "Verbosity": "",
+                "WorkingDirectory": "ScriptTest",
+                "sync_mode": true
+            },
+            {
+                "AdditionalEnvVars": "",
+                "AdditionalFlags": "",
+                "BuildTarget": "",
+                "CMakeConfigureFlags": "",
+                "CleanTarget": "",
+                "Coverity": false,
+                "Description": "Sample Python App",
+                "DotNetCommand": "",
+                "DotNetFrameWork": "",
+                "DotNetRuntime": "",
+                "Klocwork": {
+                    "BuildId": "",
+                    "BuildURL": "",
+                    "IgnoreFiles": "",
+                    "KLOCWORK_LTOKEN": "",
+                    "LicenseHost": "",
+                    "LicensePort": "",
+                    "OnErrorContinueAnalysis": "",
+                    "OverWriteDuplicates": "",
+                    "Project": "",
+                    "ServerPort": "",
+                    "ServerURL": "",
+                    "SkipKlocworkScan": true,
+                    "Type": "",
+                    "sync_mode": ""
+                },
+                "MSBuildVersionProperty": "",
+                "Name": "PythonApp",
+                "NmakeMacros": "",
+                "NugetArgs": "",
+                "NugetCommand": "",
+                "PostBuildSteps": [],
+                "ProjectFile": "PythonApp.py",
+                "ProjectType": "Script",
+                "ScriptArgs": "",
+                "Semmle": false,
+                "Sign": false,
+                "SingleThreadOnly": "",
+                "Symbols": false,
+                "Verbosity": "",
+                "WorkingDirectory": "PythonApp",
+                "sync_mode": true
+            },
+            {
+                "AdditionalEnvVars": "",
+                "AdditionalFlags": "",
+                "BuildTarget": "DotNetFrameWorkApp",
+                "CMakeConfigureFlags": "",
+                "CleanTarget": "",
+                "Coverity": false,
+                "Description": "DotNetFrameWork Test App",
+                "DotNetCommand": "",
+                "DotNetFrameWork": "",
+                "DotNetRuntime": "",
+                "Klocwork": false,
+                "MSBuildVersionProperty": "",
+                "Name": "DotNetFrameWorkApp",
+                "NmakeMacros": "",
+                "NugetArgs": "",
+                "NugetCommand": "",
+                "PostBuildSteps": [],
+                "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameWorkApp.sln",
+                "ProjectType": "MSBuild",
+                "ScriptArgs": "",
+                "Semmle": false,
+                "Sign": {
+                    "AdditionalFlags": "",
+                    "FailOnMissingFile": true,
+                    "Operations": [
+                        {
+                            "AdditionalFlags": "",
+                            "Certificate": "OWR-EV-20",
+                            "CertificateHash": "",
+                            "CrossSign": true,
+                            "FailOnMissingFile": true,
+                            "Files": [
+                                "Apps.*DotNetFrameWorkApp.exe"
+                            ],
+                            "HashAlgorithm": "SHA256",
+                            "Name": "Apps",
+                            "SignRootDir": "OWRBin"
+                        }
+                    ],
+                    "SignRootDir": "OWRBin"
+                },
+                "SingleThreadOnly": "",
+                "Symbols": false,
+                "Verbosity": "",
+                "WorkingDirectory": "",
+                "sync_mode": true
+            },
+            {
+                "AdditionalEnvVars": "",
+                "AdditionalFlags": "",
+                "BuildTarget": "DotNetCoreAppWithFrameworkAppFile",
+                "CMakeConfigureFlags": "",
+                "CleanTarget": "",
+                "Coverity": false,
+                "Description": "DotNetCoreApp Test App using DotNetFramework file",
+                "DotNetCommand": "",
+                "DotNetFrameWork": "",
+                "DotNetRuntime": "",
+                "Klocwork": {
+                    "BuildId": "",
+                    "BuildURL": "",
+                    "IgnoreFiles": "",
+                    "KLOCWORK_LTOKEN": "",
+                    "LicenseHost": "",
+                    "LicensePort": "",
+                    "OnErrorContinueAnalysis": "",
+                    "OverWriteDuplicates": "",
+                    "Project": "osrfx2_2",
+                    "ServerPort": "",
+                    "ServerURL": "",
+                    "SkipKlocworkScan": false,
+                    "Type": "csharp",
+                    "sync_mode": ""
+                },
+                "MSBuildVersionProperty": "",
+                "Name": "DotNetCoreAppWithFrameworkAppFile",
+                "NmakeMacros": "",
+                "NugetArgs": "",
+                "NugetCommand": "",
+                "PostBuildSteps": [],
+                "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameworkApp.csproj",
+                "ProjectType": "dotnetcore",
+                "ScriptArgs": "",
+                "Semmle": false,
+                "Sign": false,
+                "SingleThreadOnly": "",
+                "Symbols": false,
+                "Verbosity": "",
+                "WorkingDirectory": "",
+                "sync_mode": true
+            },
+            {
+                "AdditionalEnvVars": "",
+                "AdditionalFlags": "fu bar",
+                "BuildTarget": "",
+                "CMakeConfigureFlags": "",
+                "CleanTarget": "",
+                "Coverity": false,
+                "Description": "Custom Script Exe Test",
+                "DotNetCommand": "",
+                "DotNetFrameWork": "",
+                "DotNetRuntime": "",
+                "Klocwork": {
+                    "BuildId": "",
+                    "BuildURL": "",
+                    "IgnoreFiles": "",
+                    "KLOCWORK_LTOKEN": "",
+                    "LicenseHost": "",
+                    "LicensePort": "",
+                    "OnErrorContinueAnalysis": "",
+                    "OverWriteDuplicates": "",
+                    "Project": "",
+                    "ServerPort": "",
+                    "ServerURL": "",
+                    "SkipKlocworkScan": true,
+                    "Type": "",
+                    "sync_mode": ""
+                },
+                "MSBuildVersionProperty": "",
+                "Name": "ExeScriptTest",
+                "NmakeMacros": "",
+                "NugetArgs": "",
+                "NugetCommand": "",
+                "PostBuildSteps": [],
+                "ProjectFile": "DotNetFrameWorkApp\\Output\\DotNetFrameWorkApp.exe",
+                "ProjectType": "Script",
+                "ScriptArgs": "",
+                "Semmle": false,
+                "Sign": false,
+                "SingleThreadOnly": "",
+                "Symbols": false,
+                "Verbosity": "",
+                "WorkingDirectory": "",
+                "sync_mode": true
+            }
+        ],
+        "Symbols": {
+            "AdditionalFlags": "",
+            "PublicSymbolPatterns": {
+                ".*Drivers.*\\.pdb": "Public\\"
+            },
+            "SkipSymbolCompression": false,
+            "SkipSymbolPublish": false,
+            "SkipSymbolRecursive": false,
+            "SymbolServer": "\\\\symbols.intel.com\\test",
+            "SymbolsRootDir": "OWRBin",
+            "SymbolsToPublish": [
+                ".*Drivers.*\\.pdb"
+            ]
+        },
+        "Test": {
+            "FunctionalTestPackage": "package.zip",
+            "TestConfiguration": "TestConfig.json"
+        },
+        "Tools": [],
+        "VulnerabilityScan": {
+            "ServerURL": "https://snyk.devtools.intel.com/api"
+        },
+        "tool_class_map": {},
+        "variables": {
+            "BinaryScan": {
+                "ScanDetailsURL": "",
+                "ScanID": "",
+                "ServerGroup": "6",
+                "ServerURL": "https://bdba001.icloud.intel.com",
+                "Upload": ""
+            },
+            "BuildInfo": {
+                "ABIVersion": "",
+                "ArtifactUrl": "",
+                "Branch": "",
+                "BuildEndTime": "",
+                "BuildJobUrl": "",
+                "BuildQuality": "",
+                "BuildStartTime": "",
+                "BuildType": "",
+                "CodeScanServerUrl": "",
+                "CodeScanServerVersion": "",
+                "CustomLibraryRepoUrl": "",
+                "FullName": "platform.Common.sw.win-driver.sample",
+                "GitServerUrl": "",
+                "IPScanServerUrl": "",
+                "IPScanServerVersion": "",
+                "Id": "",
+                "IngredientGitServerUrl": "",
+                "IngredientRevision": "",
+                "Name": "Sample",
+                "ReleaseNotes": "",
+                "ReleaseVersion": "",
+                "ReportUrls": [],
+                "Revision": "",
+                "SDL": [
+                    {
+                        "ID": "8976",
+                        "Submitter": "***",
+                        "URL": "https://sdl-e.app.intel.com/project?id=3e0f5f68-76b9-4129-823d-b68492c70f78"
+                    }
+                ],
+                "ServerURL": "https://onebkc.intel.com",
+                "SignVersion": "",
+                "Type": "onebkc",
+                "Version": ""
+            },
+            "CabinetFile": {
+                "cab_files": [],
+                "cabinet_name_template": "SampleIngredient",
+                "directive_file": "",
+                "disk_directory_template": "CabFiles",
+                "output_path": "",
+                "output_root": "",
+                "source_path": "",
+                "variables": "UniqueFiles=NO,DestinationDir=Sample,CabinetFileCountThreshold=0,FolderFileCountThreshold=0,FolderSizeThreshold=0,MaxCabinetSize=0,MaxDiskFileCount=0,MaxDiskSize=0"
+            },
+            "Configuration": "",
+            "Coverity": {
+                "CompilerTemplates": [],
+                "IgnoreFiles": [],
+                "ServerURL": "https://coverityent-pilot3.devtools.intel.com",
+                "SkipCoverityScan": false,
+                "Stream": ""
+            },
+            "DeployCustomPath": "",
+            "DeployCustomServer": "",
+            "DeployToOWR": "",
+            "Description": "OWR ABI Project File for DCHU Sample ingredient",
+            "EWDKPlatform": "",
+            "ErrorHandling": {
+                "ConsoleLogLevel": "",
+                "FileLogLevel": "",
+                "FileLogPath": "",
+                "SentryCaptureLevel": "",
+                "SentryEventLevel": "",
+                "SentryUrl": ""
+            },
+            "Errors": [],
+            "IngredientName": "Sample",
+            "IngredientPath": "src/windows",
+            "IngredientVersion": "9.3.15.598",
+            "IngredientWorkspace": "C:\\runner\\_work\\frameworks.devops.intel-devops-framework.sample-ingredient\\frameworks.devops.intel-devops-framework.sample-ingredient/../../workspace\\src/windows",
+            "Klocwork": {
+                "BuildId": "Sample_9.3.15.598",
+                "BuildURL": "",
+                "IgnoreFiles": "",
+                "KLOCWORK_LTOKEN": "",
+                "LicenseHost": "klocwork05p.elic.intel.com",
+                "LicensePort": "7500",
+                "OnErrorContinueAnalysis": "",
+                "OverWriteDuplicates": "",
+                "Project": "osrfx2",
+                "ServerPort": "8105",
+                "ServerURL": "https://klocwork-jf7.devtools.intel.com",
+                "SkipKlocworkScan": false,
+                "Type": "",
+                "sync_mode": ""
+            },
+            "KlocworkContext": {
+                "BuildSpecificationsPath": "",
+                "RunKlocworkScan": false,
+                "kwcsprojparserExe": "",
+                "kwinjectExe": ""
+            },
+            "Mtcd": {
+                "backoff_factor": [
+                    [
+                        "backoff_factor"
+                    ]
+                ],
+                "client_id": "",
+                "device_type": "internal",
+                "download_type": "",
+                "output_file": "",
+                "product_id": "",
+                "product_name": "sample_product",
+                "product_template": "",
+                "product_variables": "",
+                "requested_signatures": [
+                    "WINDOWS_v100_X64_NI_FULL"
+                ],
+                "retries": "",
+                "selected_product_types": "",
+                "server_url": "https://mtcdevops.intel.com",
+                "submission_files": [],
+                "submission_id": "",
+                "submission_name": "Sample_Attest_Submission",
+                "submission_template": "",
+                "submission_type": "initial",
+                "submission_variables": "",
+                "tenant_id": "",
+                "test_harness": "Attestation",
+                "test_signed": false
+            },
+            "OutputConfiguration": "PackageGen.json",
+            "OutputDir": "OWRBuild",
+            "OutputRoot": "OWRBin",
+            "Outputs": [],
+            "PackageMetadataTemplate": "PackageMetadataTemplate.json",
+            "PackageRoot": "OWRPackage",
+            "Platform": "",
+            "Protex": {
+                "output_dir": "",
+                "projects": [
+                    {
+                        "OutputConfiguration": "",
+                        "ProjectID": "c_osrfx2-sample-test_22087",
+                        "Server": "https://amrprotex006.devtools.intel.com",
+                        "TargetPath": ""
+                    },
+                    {
+                        "OutputConfiguration": "",
+                        "ProjectID": "c_osrfx2-sample_18434",
+                        "Server": "https://amrprotex006.devtools.intel.com",
+                        "TargetPath": ""
+                    }
+                ]
+            },
+            "RootDir": "C:\\runner\\_work\\frameworks.devops.intel-devops-framework.sample-ingredient\\frameworks.devops.intel-devops-framework.sample-ingredient/../../workspace",
+            "SchemaVersion": "1.0",
+            "Sign": {
+                "AdditionalFlags": "",
+                "FailOnMissingFile": true,
+                "Operations": [
+                    {
+                        "AdditionalFlags": "",
+                        "Certificate": "OWR-EV-20",
+                        "CertificateHash": "",
+                        "CrossSign": true,
+                        "FailOnMissingFile": true,
+                        "Files": [
+                            "Apps.*osrfx2_DCHU_usersvc.exe",
+                            "Drivers.*osrfx2_DCHU_base.dll",
+                            "Drivers.*osrfx2_DCHU_filter.dll",
+                            "Drivers.*osrfx2_DCHU_usersvc.exe",
+                            "Drivers.*osrfx2_dchu_base.cat"
+                        ],
+                        "HashAlgorithm": "SHA256",
+                        "Name": "Driver",
+                        "SignRootDir": "OWRBin"
+                    },
+                    {
+                        "AdditionalFlags": "",
+                        "Certificate": "INTEL_CORP",
+                        "CertificateHash": "",
+                        "CrossSign": true,
+                        "FailOnMissingFile": true,
+                        "Files": [
+                            "CabFiles.*Sample.*.cab"
+                        ],
+                        "HashAlgorithm": "SHA256",
+                        "Name": "CabFiles",
+                        "SignRootDir": "OWRPackage"
+                    }
+                ],
+                "SignRootDir": "OWRBin"
+            },
+            "StaticSecurityScan": {
+                "DashboardURL": "",
+                "IsPublic": true,
+                "ProjectID": "329381",
+                "ScanID": "",
+                "ServerURL": "https://sast.intel.com"
+            },
+            "SubComponents": [
+                {
+                    "AdditionalEnvVars": "",
+                    "AdditionalFlags": "",
+                    "BuildTarget": "",
+                    "CMakeConfigureFlags": "",
+                    "CleanTarget": "",
+                    "Coverity": {
+                        "CompilerTemplates": [
+                            "cs",
+                            "msvc"
+                        ],
+                        "IgnoreFiles": [],
+                        "SkipCoverityScan": false,
+                        "Stream": "ABI_TestingCoverity-Plugin"
+                    },
+                    "Description": "WindowsDriver Sample DCHU Base Driver",
+                    "DotNetCommand": "",
+                    "DotNetFrameWork": "",
+                    "DotNetRuntime": "",
+                    "Klocwork": {
+                        "BuildId": "",
+                        "BuildURL": "",
+                        "IgnoreFiles": "",
+                        "KLOCWORK_LTOKEN": "",
+                        "LicenseHost": "",
+                        "LicensePort": "",
+                        "OnErrorContinueAnalysis": "",
+                        "OverWriteDuplicates": "",
+                        "Project": "osrfx2",
+                        "ServerPort": "",
+                        "ServerURL": "",
+                        "SkipKlocworkScan": false,
+                        "Type": "cpp",
+                        "sync_mode": ""
+                    },
+                    "MSBuildVersionProperty": "OWRBuildVersion",
+                    "Name": "BaseDriver",
+                    "NmakeMacros": "",
+                    "NugetArgs": "",
+                    "NugetCommand": "restore",
+                    "PostBuildSteps": [
+                        {
+                            "PostBuildCmd": "pwd",
+                            "PostBuildEnvVars": ""
+                        }
+                    ],
+                    "ProjectFile": "WindowsDriver_DCHU_base\\osrfx2_DCHU_base.sln",
+                    "ProjectType": "MSBuild",
+                    "ScriptArgs": "",
+                    "Semmle": {
+                        "ReportType": [
+                            "sarifv2",
+                            "csv"
+                        ],
+                        "Type": "cpp"
+                    },
+                    "Sign": false,
+                    "SingleThreadOnly": "",
+                    "Symbols": false,
+                    "Verbosity": true,
+                    "WorkingDirectory": "",
+                    "sync_mode": true
+                },
+                {
+                    "AdditionalEnvVars": "",
+                    "AdditionalFlags": " -- /m /flp:logfile=CMakeApp.log",
+                    "BuildTarget": "",
+                    "CMakeConfigureFlags": "",
+                    "CleanTarget": "",
+                    "Coverity": false,
+                    "Description": "CMake Sample C App",
+                    "DotNetCommand": "",
+                    "DotNetFrameWork": "",
+                    "DotNetRuntime": "",
+                    "Klocwork": {
+                        "BuildId": "",
+                        "BuildURL": "",
+                        "IgnoreFiles": "",
+                        "KLOCWORK_LTOKEN": "",
+                        "LicenseHost": "",
+                        "LicensePort": "",
+                        "OnErrorContinueAnalysis": "",
+                        "OverWriteDuplicates": "",
+                        "Project": "osrfx2",
+                        "ServerPort": "",
+                        "ServerURL": "",
+                        "SkipKlocworkScan": false,
+                        "Type": "cpp",
+                        "sync_mode": ""
+                    },
+                    "MSBuildVersionProperty": "",
+                    "Name": "CMakeApp",
+                    "NmakeMacros": "",
+                    "NugetArgs": "",
+                    "NugetCommand": "",
+                    "PostBuildSteps": [],
+                    "ProjectFile": "CMakeApp",
+                    "ProjectType": "CMake",
+                    "ScriptArgs": "",
+                    "Semmle": false,
+                    "Sign": false,
+                    "SingleThreadOnly": "",
+                    "Symbols": false,
+                    "Verbosity": "",
+                    "WorkingDirectory": "",
+                    "sync_mode": true
+                },
+                {
+                    "AdditionalEnvVars": "",
+                    "AdditionalFlags": "/B /C",
+                    "BuildTarget": "foo",
+                    "CMakeConfigureFlags": "",
+                    "CleanTarget": "",
+                    "Coverity": {
+                        "CompilerTemplates": [],
+                        "IgnoreFiles": [],
+                        "SkipCoverityScan": false,
+                        "Stream": "ABI_TestingCoverity-Plugin"
+                    },
+                    "Description": "Nmake sample",
+                    "DotNetCommand": "",
+                    "DotNetFrameWork": "",
+                    "DotNetRuntime": "",
+                    "Klocwork": {
+                        "BuildId": "",
+                        "BuildURL": "",
+                        "IgnoreFiles": "",
+                        "KLOCWORK_LTOKEN": "",
+                        "LicenseHost": "",
+                        "LicensePort": "",
+                        "OnErrorContinueAnalysis": "",
+                        "OverWriteDuplicates": "",
+                        "Project": "osrfx2",
+                        "ServerPort": "",
+                        "ServerURL": "",
+                        "SkipKlocworkScan": true,
+                        "Type": "cpp",
+                        "sync_mode": ""
+                    },
+                    "MSBuildVersionProperty": "",
+                    "Name": "Nmake",
+                    "NmakeMacros": "project = sample",
+                    "NugetArgs": "",
+                    "NugetCommand": "",
+                    "PostBuildSteps": [],
+                    "ProjectFile": "nmake\\makefile",
+                    "ProjectType": "nmake",
+                    "ScriptArgs": "",
+                    "Semmle": false,
+                    "Sign": false,
+                    "SingleThreadOnly": "",
+                    "Symbols": false,
+                    "Verbosity": "",
+                    "WorkingDirectory": "",
+                    "sync_mode": true
+                },
+                {
+                    "AdditionalEnvVars": "",
+                    "AdditionalFlags": "",
+                    "BuildTarget": "",
+                    "CMakeConfigureFlags": "",
+                    "CleanTarget": "",
+                    "Coverity": false,
+                    "Description": "Sample Python Script",
+                    "DotNetCommand": "",
+                    "DotNetFrameWork": "",
+                    "DotNetRuntime": "",
+                    "Klocwork": {
+                        "BuildId": "",
+                        "BuildURL": "",
+                        "IgnoreFiles": "",
+                        "KLOCWORK_LTOKEN": "",
+                        "LicenseHost": "",
+                        "LicensePort": "",
+                        "OnErrorContinueAnalysis": "",
+                        "OverWriteDuplicates": "",
+                        "Project": "",
+                        "ServerPort": "",
+                        "ServerURL": "",
+                        "SkipKlocworkScan": true,
+                        "Type": "",
+                        "sync_mode": ""
+                    },
+                    "MSBuildVersionProperty": "",
+                    "Name": "ScriptTest",
+                    "NmakeMacros": "",
+                    "NugetArgs": "",
+                    "NugetCommand": "",
+                    "PostBuildSteps": [],
+                    "ProjectFile": "script_test.py",
+                    "ProjectType": "Script",
+                    "ScriptArgs": "",
+                    "Semmle": false,
+                    "Sign": false,
+                    "SingleThreadOnly": "",
+                    "Symbols": false,
+                    "Verbosity": "",
+                    "WorkingDirectory": "ScriptTest",
+                    "sync_mode": true
+                },
+                {
+                    "AdditionalEnvVars": "",
+                    "AdditionalFlags": "",
+                    "BuildTarget": "",
+                    "CMakeConfigureFlags": "",
+                    "CleanTarget": "",
+                    "Coverity": false,
+                    "Description": "Sample Python App",
+                    "DotNetCommand": "",
+                    "DotNetFrameWork": "",
+                    "DotNetRuntime": "",
+                    "Klocwork": {
+                        "BuildId": "",
+                        "BuildURL": "",
+                        "IgnoreFiles": "",
+                        "KLOCWORK_LTOKEN": "",
+                        "LicenseHost": "",
+                        "LicensePort": "",
+                        "OnErrorContinueAnalysis": "",
+                        "OverWriteDuplicates": "",
+                        "Project": "",
+                        "ServerPort": "",
+                        "ServerURL": "",
+                        "SkipKlocworkScan": true,
+                        "Type": "",
+                        "sync_mode": ""
+                    },
+                    "MSBuildVersionProperty": "",
+                    "Name": "PythonApp",
+                    "NmakeMacros": "",
+                    "NugetArgs": "",
+                    "NugetCommand": "",
+                    "PostBuildSteps": [],
+                    "ProjectFile": "PythonApp.py",
+                    "ProjectType": "Script",
+                    "ScriptArgs": "",
+                    "Semmle": false,
+                    "Sign": false,
+                    "SingleThreadOnly": "",
+                    "Symbols": false,
+                    "Verbosity": "",
+                    "WorkingDirectory": "PythonApp",
+                    "sync_mode": true
+                },
+                {
+                    "AdditionalEnvVars": "",
+                    "AdditionalFlags": "",
+                    "BuildTarget": "DotNetFrameWorkApp",
+                    "CMakeConfigureFlags": "",
+                    "CleanTarget": "",
+                    "Coverity": false,
+                    "Description": "DotNetFrameWork Test App",
+                    "DotNetCommand": "",
+                    "DotNetFrameWork": "",
+                    "DotNetRuntime": "",
+                    "Klocwork": false,
+                    "MSBuildVersionProperty": "",
+                    "Name": "DotNetFrameWorkApp",
+                    "NmakeMacros": "",
+                    "NugetArgs": "",
+                    "NugetCommand": "",
+                    "PostBuildSteps": [],
+                    "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameWorkApp.sln",
+                    "ProjectType": "MSBuild",
+                    "ScriptArgs": "",
+                    "Semmle": false,
+                    "Sign": {
+                        "AdditionalFlags": "",
+                        "FailOnMissingFile": true,
+                        "Operations": [
+                            {
+                                "AdditionalFlags": "",
+                                "Certificate": "OWR-EV-20",
+                                "CertificateHash": "",
+                                "CrossSign": true,
+                                "FailOnMissingFile": true,
+                                "Files": [
+                                    "Apps.*DotNetFrameWorkApp.exe"
+                                ],
+                                "HashAlgorithm": "SHA256",
+                                "Name": "Apps",
+                                "SignRootDir": "OWRBin"
+                            }
+                        ],
+                        "SignRootDir": "OWRBin"
+                    },
+                    "SingleThreadOnly": "",
+                    "Symbols": false,
+                    "Verbosity": "",
+                    "WorkingDirectory": "",
+                    "sync_mode": true
+                },
+                {
+                    "AdditionalEnvVars": "",
+                    "AdditionalFlags": "",
+                    "BuildTarget": "DotNetCoreAppWithFrameworkAppFile",
+                    "CMakeConfigureFlags": "",
+                    "CleanTarget": "",
+                    "Coverity": false,
+                    "Description": "DotNetCoreApp Test App using DotNetFramework file",
+                    "DotNetCommand": "",
+                    "DotNetFrameWork": "",
+                    "DotNetRuntime": "",
+                    "Klocwork": {
+                        "BuildId": "",
+                        "BuildURL": "",
+                        "IgnoreFiles": "",
+                        "KLOCWORK_LTOKEN": "",
+                        "LicenseHost": "",
+                        "LicensePort": "",
+                        "OnErrorContinueAnalysis": "",
+                        "OverWriteDuplicates": "",
+                        "Project": "osrfx2_2",
+                        "ServerPort": "",
+                        "ServerURL": "",
+                        "SkipKlocworkScan": false,
+                        "Type": "csharp",
+                        "sync_mode": ""
+                    },
+                    "MSBuildVersionProperty": "",
+                    "Name": "DotNetCoreAppWithFrameworkAppFile",
+                    "NmakeMacros": "",
+                    "NugetArgs": "",
+                    "NugetCommand": "",
+                    "PostBuildSteps": [],
+                    "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameworkApp.csproj",
+                    "ProjectType": "dotnetcore",
+                    "ScriptArgs": "",
+                    "Semmle": false,
+                    "Sign": false,
+                    "SingleThreadOnly": "",
+                    "Symbols": false,
+                    "Verbosity": "",
+                    "WorkingDirectory": "",
+                    "sync_mode": true
+                },
+                {
+                    "AdditionalEnvVars": "",
+                    "AdditionalFlags": "fu bar",
+                    "BuildTarget": "",
+                    "CMakeConfigureFlags": "",
+                    "CleanTarget": "",
+                    "Coverity": false,
+                    "Description": "Custom Script Exe Test",
+                    "DotNetCommand": "",
+                    "DotNetFrameWork": "",
+                    "DotNetRuntime": "",
+                    "Klocwork": {
+                        "BuildId": "",
+                        "BuildURL": "",
+                        "IgnoreFiles": "",
+                        "KLOCWORK_LTOKEN": "",
+                        "LicenseHost": "",
+                        "LicensePort": "",
+                        "OnErrorContinueAnalysis": "",
+                        "OverWriteDuplicates": "",
+                        "Project": "",
+                        "ServerPort": "",
+                        "ServerURL": "",
+                        "SkipKlocworkScan": true,
+                        "Type": "",
+                        "sync_mode": ""
+                    },
+                    "MSBuildVersionProperty": "",
+                    "Name": "ExeScriptTest",
+                    "NmakeMacros": "",
+                    "NugetArgs": "",
+                    "NugetCommand": "",
+                    "PostBuildSteps": [],
+                    "ProjectFile": "DotNetFrameWorkApp\\Output\\DotNetFrameWorkApp.exe",
+                    "ProjectType": "Script",
+                    "ScriptArgs": "",
+                    "Semmle": false,
+                    "Sign": false,
+                    "SingleThreadOnly": "",
+                    "Symbols": false,
+                    "Verbosity": "",
+                    "WorkingDirectory": "",
+                    "sync_mode": true
+                }
+            ],
+            "Symbols": {
+                "AdditionalFlags": "",
+                "PublicSymbolPatterns": {
+                    ".*Drivers.*\\.pdb": "Public\\"
+                },
+                "SkipSymbolCompression": false,
+                "SkipSymbolPublish": false,
+                "SkipSymbolRecursive": false,
+                "SymbolServer": "\\\\symbols.intel.com\\test",
+                "SymbolsRootDir": "OWRBin",
+                "SymbolsToPublish": [
+                    ".*Drivers.*\\.pdb"
+                ]
+            },
+            "Test": {
+                "FunctionalTestPackage": "package.zip",
+                "TestConfiguration": "TestConfig.json"
+            },
+            "Tools": [],
+            "VulnerabilityScan": {
+                "ServerURL": "https://snyk.devtools.intel.com/api"
+            },
+            "tool_class_map": {},
+            "variables": {
+                "ArtifactPkgName": "",
+                "BinaryScan": {
+                    "ServerGroup": "6",
+                    "ServerURL": "https://bdba001.icloud.intel.com"
+                },
+                "BuildInfo": {
+                    "FullName": "platform.Common.sw.win-driver.sample",
+                    "Name": "Sample",
+                    "SDL": [
+                        {
+                            "ID": "8976",
+                            "Submitter": "***",
+                            "URL": "https://sdl-e.app.intel.com/project?id=3e0f5f68-76b9-4129-823d-b68492c70f78"
+                        }
+                    ],
+                    "ServerURL": "https://onebkc.intel.com",
+                    "Type": "onebkc"
+                },
+                "CabinetFile": {
+                    "cabinet_name_template": "SampleIngredient",
+                    "disk_directory_template": "CabFiles",
+                    "variables": "UniqueFiles=NO,DestinationDir=Sample,CabinetFileCountThreshold=0,FolderFileCountThreshold=0,FolderSizeThreshold=0,MaxCabinetSize=0,MaxDiskFileCount=0,MaxDiskSize=0"
+                },
+                "Coverity": {
+                    "ServerURL": "https://coverityent-pilot3.devtools.intel.com"
+                },
+                "Description": "OWR ABI Project File for DCHU Sample ingredient",
+                "IngredientName": "Sample",
+                "Klocwork": {
+                    "LicenseHost": "klocwork05p.elic.intel.com",
+                    "LicensePort": "7500",
+                    "OutputConfiguration": "",
+                    "Project": "osrfx2",
+                    "ServerPort": "8105",
+                    "ServerURL": "https://klocwork-jf7.devtools.intel.com"
+                },
+                "Mtcd": {
+                    "device_type": "internal",
+                    "product_name": "sample_product",
+                    "requested_signatures": [
+                        "WINDOWS_v100_X64_NI_FULL"
+                    ],
+                    "server_url": "https://mtcdevops.intel.com",
+                    "submission_name": "Sample_Attest_Submission",
+                    "submission_type": "initial",
+                    "test_harness": "Attestation",
+                    "test_signed": false
+                },
+                "OutputConfiguration": "PackageGen.json",
+                "OutputRoot": "OWRBin",
+                "PackageMetadataTemplate": "PackageMetadataTemplate.json",
+                "PackageRoot": "OWRPackage",
+                "Protex": [
+                    {
+                        "ProjectID": "c_osrfx2-sample-test_22087",
+                        "Server": "amrprotex006.devtools.intel.com"
+                    },
+                    {
+                        "ProjectID": "c_osrfx2-sample_18434",
+                        "Server": "amrprotex006.devtools.intel.com"
+                    }
+                ],
+                "SchemaVersion": "1.0",
+                "Sign": {
+                    "FailOnMissingFile": true,
+                    "Operations": [
+                        {
+                            "AdditionalFlags": "",
+                            "Certificate": "OWR-EV-20",
+                            "CertificateHash": "",
+                            "FailOnMissingFile": true,
+                            "Files": [
+                                "Apps.*osrfx2_DCHU_usersvc.exe",
+                                "Drivers.*osrfx2_DCHU_base.dll",
+                                "Drivers.*osrfx2_DCHU_filter.dll",
+                                "Drivers.*osrfx2_DCHU_usersvc.exe",
+                                "Drivers.*osrfx2_dchu_base.cat"
+                            ],
+                            "HashAlgorithm": "SHA256",
+                            "Name": "Driver",
+                            "SignRootDir": "OWRBin"
+                        },
+                        {
+                            "AdditionalFlags": "",
+                            "Certificate": "INTEL_CORP",
+                            "CertificateHash": "",
+                            "FailOnMissingFile": true,
+                            "Files": [
+                                "CabFiles.*Sample.*.cab"
+                            ],
+                            "HashAlgorithm": "SHA256",
+                            "Name": "CabFiles",
+                            "SignRootDir": "OWRPackage"
+                        }
+                    ],
+                    "SignRootDir": "OWRBin"
+                },
+                "StaticSecurityScan": {
+                    "IsPublic": true,
+                    "ProjectID": "329381",
+                    "ServerURL": "https://sast.intel.com"
+                },
+                "SubComponents": [
+                    {
+                        "AdditionalEnvVars": "",
+                        "AdditionalFlags": "",
+                        "BuildTarget": "",
+                        "CleanTarget": "",
+                        "Coverity": {
+                            "CompilerTemplates": [
+                                "cs",
+                                "msvc"
+                            ],
+                            "SkipCoverityScan": false,
+                            "Stream": "ABI_TestingCoverity-Plugin"
+                        },
+                        "Description": "WindowsDriver Sample DCHU Base Driver",
+                        "FailOnMissingFile": true,
+                        "FilesToSign": [
+                            ""
+                        ],
+                        "Klocwork": {
+                            "Project": "osrfx2",
+                            "Type": "cpp"
+                        },
+                        "MSBuildVersionProperty": "OWRBuildVersion",
+                        "Name": "BaseDriver",
+                        "NugetArgs": "",
+                        "NugetCommand": "restore",
+                        "PostBuildSteps": [
+                            {
+                                "PostBuildCmd": "pwd",
+                                "PostBuildEnvVars": ""
+                            }
+                        ],
+                        "ProjectFile": "WindowsDriver_DCHU_base\\osrfx2_DCHU_base.sln",
+                        "ProjectType": "MSBuild",
+                        "Semmle": {
+                            "ReportType": [
+                                "sarifv2",
+                                "csv"
+                            ],
+                            "Type": "cpp"
+                        },
+                        "SingleThreadOnly": "",
+                        "Verbosity": true,
+                        "sync_mode": true
+                    },
+                    {
+                        "AdditionalFlags": " -- /m /flp:logfile=CMakeApp.log",
+                        "CMakeConfigureFlags": "",
+                        "Description": "CMake Sample C App",
+                        "Klocwork": {
+                            "Project": "osrfx2",
+                            "Type": "cpp"
+                        },
+                        "Name": "CMakeApp",
+                        "ProjectFile": "CMakeApp",
+                        "ProjectType": "CMake",
+                        "sync_mode": true
+                    },
+                    {
+                        "AdditionalFlags": "/B /C",
+                        "BuildTarget": "foo",
+                        "Coverity": {
+                            "SkipCoverityScan": false,
+                            "Stream": "ABI_TestingCoverity-Plugin"
+                        },
+                        "Description": "Nmake sample",
+                        "Klocwork": {
+                            "Project": "osrfx2",
+                            "SkipKlocworkScan": true,
+                            "Type": "cpp"
+                        },
+                        "Name": "Nmake",
+                        "NmakeMacros": "project = sample",
+                        "ProjectFile": "nmake\\makefile",
+                        "ProjectType": "nmake",
+                        "sync_mode": true
+                    },
+                    {
+                        "Description": "Sample Python Script",
+                        "Klocwork": {
+                            "SkipKlocworkScan": true
+                        },
+                        "Name": "ScriptTest",
+                        "ProjectFile": "script_test.py",
+                        "ProjectType": "Script",
+                        "WorkingDirectory": "ScriptTest",
+                        "sync_mode": true
+                    },
+                    {
+                        "AdditionalEnvVars": "",
+                        "Description": "Sample Python App",
+                        "Klocwork": {
+                            "SkipKlocworkScan": true
+                        },
+                        "Name": "PythonApp",
+                        "ProjectFile": "PythonApp.py",
+                        "ProjectType": "Script",
+                        "WorkingDirectory": "PythonApp",
+                        "sync_mode": true
+                    },
+                    {
+                        "BuildTarget": "DotNetFrameWorkApp",
+                        "Description": "DotNetFrameWork Test App",
+                        "Name": "DotNetFrameWorkApp",
+                        "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameWorkApp.sln",
+                        "ProjectType": "MSBuild",
+                        "Sign": {
+                            "FailOnMissingFile": true,
+                            "Operations": [
+                                {
+                                    "AdditionalFlags": "",
+                                    "Certificate": "OWR-EV-20",
+                                    "CertificateHash": "",
+                                    "FailOnMissingFile": true,
+                                    "Files": [
+                                        "Apps.*DotNetFrameWorkApp.exe"
+                                    ],
+                                    "HashAlgorithm": "SHA256",
+                                    "Name": "Apps",
+                                    "SignRootDir": "OWRBin"
+                                }
+                            ],
+                            "SignRootDir": "OWRBin"
+                        },
+                        "sync_mode": true
+                    },
+                    {
+                        "BuildTarget": "DotNetCoreAppWithFrameworkAppFile",
+                        "Description": "DotNetCoreApp Test App using DotNetFramework file",
+                        "Klocwork": {
+                            "Project": "osrfx2_2",
+                            "SkipKlocworkScan": false,
+                            "Type": "csharp"
+                        },
+                        "Name": "DotNetCoreAppWithFrameworkAppFile",
+                        "ProjectFile": "DotNetFrameWorkApp\\DotNetFrameworkApp.csproj",
+                        "ProjectType": "dotnetcore",
+                        "Sign": false,
+                        "sync_mode": true
+                    },
+                    {
+                        "AdditionalFlags": "fu bar",
+                        "Description": "Custom Script Exe Test",
+                        "Klocwork": {
+                            "SkipKlocworkScan": true
+                        },
+                        "Name": "ExeScriptTest",
+                        "ProjectFile": "DotNetFrameWorkApp\\Output\\DotNetFrameWorkApp.exe",
+                        "ProjectType": "Script",
+                        "Sign": false,
+                        "sync_mode": true
+                    }
+                ],
+                "Symbols": {
+                    "AdditionalFlags": "",
+                    "PublicSymbolPatterns": {
+                        ".*Drivers.*\\.pdb": "Public\\"
+                    },
+                    "SymbolServer": "\\\\symbols.intel.com\\test",
+                    "SymbolsRootDir": "OWRBin",
+                    "SymbolsToPublish": [
+                        ".*Drivers.*\\.pdb"
+                    ]
+                },
+                "Test": {
+                    "FunctionalTestPackage": "package.zip",
+                    "TestConfiguration": "TestConfig.json"
+                },
+                "VulnerabilityScan": {
+                    "ServerURL": "https://snyk.devtools.intel.com/api"
+                }
+            }
+        }
+    }
+}
+}
