@@ -71,7 +71,7 @@ jobs:
       
       - name: Generate Scan Command and set output variable called- covscan_cmd
         id: "ScanCmd"
-        run: ${{ env.PYTHON_PATH }} $GITHUB_WORKSPACE/devsecauditparser.py --context '${{ toJSON(steps.ReadContextOutput.outputs.contextData) }}' --output_type 'CoverityScan'
+        run: ${{ env.PYTHON_PATH }} devsecauditparser.py --context '${{ toJSON(steps.ReadContextOutput.outputs.contextData) }}' --output_type 'CoverityScan'
         shell: bash
       
       - name: Execute Scan
