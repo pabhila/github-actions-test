@@ -57,6 +57,6 @@ jobs:
       
       - name: "Json Object"
         run: |
-           echo "${{fromJson(steps.ReadContextOutput.outputs.contextData).Configuration}}"
+           echo "${{fromJson(steps.ReadContextOutput.outputs.contextData).IngredientVersion}}"
 
 
