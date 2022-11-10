@@ -58,5 +58,15 @@ jobs:
       - name: "Json Object"
         run: |
            echo "${{fromJson(steps.ReadContextOutput.outputs.contextData)}}"
+      
+      - name: Setup Python Version
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 # Install the python version needed
+
+      - name: Install Python dependencies
+        run: |
+             python -m pip install --upgrade pip requests
+             python -m pip install -U click
 
 
