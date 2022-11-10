@@ -31,20 +31,28 @@ jobs:
       #      who-to-greet: John
       # - name: Log Greeting Time
       #   run: echo "${{ steps.greet.outputs.time }}}"
-      - name: "Set workspace env var"
-        run: |
-          echo 'ABSOLUTE_CUSTOM_WORKSPACE="$GITHUB_WORKSPACE/../../workspace"' >> $GITHUB_ENV
-          echo 'RELATIVE_CUSTOM_WORKSPACE="./../../workspace"' >> $GITHUB_ENV
-        shell: bash
       - name: Set the Output Context
         id: "OutputContext"
         run: |
-            echo "contextDataPath=${{ format('{0}/{1}', env.RELATIVE_CUSTOM_WORKSPACE, 'abi_coverity_scan_output_context.json') }}" >> $GITHUB_OUTPUT 
+            echo "contextDataPath=${{ format('{0}/{1}', env.GITHUB_WORKSPACE, 'abi_coverity_scan_output_context.json') }}" >> $GITHUB_OUTPUT
         shell: bash
+      
+      # - name: "Sleep"
+      #   shell: bash
+      #   run: |
+      #      sleep 10m
+      
       - name: "Read Context Output"
         id: "ReadContextOutput"
         run: |
-          echo ${{steps.OutputContext.outputs.contextDataPath}}
+          content=`cat ${{ steps.OutputContext.outputs.contextDataPath }}`
+          echo $content
+          # the following lines are only required for multi line json
+          content="${content//'%'/'%25'}"
+          content="${content//$'\n'/'%0A'}"
+          content="${content//$'\r'/'%0D'}"
+          # end of optional handling for multi line json
+          echo "::set-output name=contextData::$content"
         shell: bash
 
 
