@@ -46,7 +46,7 @@ class DevSecAuditParser:
 @click.command()
 @click.option("--context", help="context data", required=True)
 @click.option("--output_type",  help="scan type", required=True)
-def get_scan_cmd(context: json, output_type: str):
+def get_scan_cmd(context: str, output_type: str):
     context = json.loads(context)
     devsecaudit_obj = DevSecAuditParser(context)
     devsecaudit_cmd = devsecaudit_obj.get_report_files(output_type)
