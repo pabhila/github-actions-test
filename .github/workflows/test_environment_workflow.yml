@@ -31,9 +31,5 @@ jobs:
         shell: bash
       - name: "Print Build Config File."
         run: |
-            cat BuildConfig.json
-        shell: bash
-      - name: "Print Build Config Copy File."
-        run: |
-            cat BuildConfig_copy.json
+            python hello.py
         shell: bash
