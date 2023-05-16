@@ -18,7 +18,7 @@ jobs:
             echo "${{ github.token }}"
       - name: "Set Enviroment Variable"
         run: |
-            source my_env.env
+            source my_env.env && export $(sed '/^#/d' my_env.env | cut -d= -f1)
         shell: bash
       - name: "Print Build Config File."
         run: |
