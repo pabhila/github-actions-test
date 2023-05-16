@@ -16,10 +16,11 @@ jobs:
             echo $GITHUB_REPOSITORY
             echo $GITHUB_WORKSPACE
             echo "${{ github.token }}"
-      # - name: "Set Enviroment Variable"
-      #   run: |
-      #       source my_env.env && export $(sed '/^#/d' my_env.env | cut -d= -f1)
-      #   shell: bash
+      - name: "Set Enviroment Variable"
+        run: |
+            source my_env.env && export $(sed '/^#/d' my_env.env | cut -d= -f1)
+            export -p
+        shell: bash
       - name: "Set Enviroment Variable"
         run: |
            export KlocworkProject="sample_windows"
