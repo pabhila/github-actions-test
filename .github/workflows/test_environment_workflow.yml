@@ -18,9 +18,7 @@ jobs:
             echo "${{ github.token }}"
       - name: "Set Enviroment Variable"
         run: |
-            set -a # automatically export all variables
-            source .env
-            set +a
+            source my_env.env
       - name: "Print Build Config File."
         run: |
             cat BuildConfig.json
