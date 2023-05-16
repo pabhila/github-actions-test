@@ -21,14 +21,14 @@ jobs:
             source my_env.env && export $(sed '/^#/d' my_env.env | cut -d= -f1)
             export -p
         shell: bash
-      - name: "Set Enviroment Variable"
-        run: |
-           export KlocworkProject="sample_windows"
-           export KlocworkCSharpProject="sample_windows_csharp"
-           export CoverityStream="CCG-ADO-BA-SAMPLE-WINDOWS-C-DEVELOP"
-           export CoverityCSharpStream="CCG-ADO-BA-SAMPLE-WINDOWS-CSHARP-DEVELOP"
-           export -p
-        shell: bash
+      # - name: "Set Enviroment Variable"
+      #   run: |
+      #      export KlocworkProject="sample_windows"
+      #      export KlocworkCSharpProject="sample_windows_csharp"
+      #      export CoverityStream="CCG-ADO-BA-SAMPLE-WINDOWS-C-DEVELOP"
+      #      export CoverityCSharpStream="CCG-ADO-BA-SAMPLE-WINDOWS-CSHARP-DEVELOP"
+      #      export -p
+      #   shell: bash
       - name: "Print Build Config File."
         run: |
             python hello.py
