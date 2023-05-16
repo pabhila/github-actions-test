@@ -26,6 +26,7 @@ jobs:
            export KlocworkCSharpProject="sample_windows_csharp"
            export CoverityStream="CCG-ADO-BA-SAMPLE-WINDOWS-C-DEVELOP"
            export CoverityCSharpStream="CCG-ADO-BA-SAMPLE-WINDOWS-CSHARP-DEVELOP"
+           export -p
         shell: bash
       - name: "Print Build Config File."
         run: |
