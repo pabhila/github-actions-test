@@ -1,0 +1,325 @@
+{
+    "IngredientName": "SampleWin",
+    "Description": "IDF ABI Project Config File for Sample Windows ingredient",
+    "OutputConfiguration": "IDF/PackageGen.json",
+    "OutputRoot": "OWRBin",
+    "OutputDir": "OWRBuild",
+    "PackageRoot": "OWRPackage",
+    "PackageMetadataTemplate": "IDF/PackageMetadataTemplate.json",
+    "BuildInfo":{
+        "Name":"samplewin",
+        "FullName":"platform.Common.sw.win-driver.SampleWin",
+        "SDL": [
+            {
+                "ID": "",
+                "URL": "",
+                "Submitter": "sys_owrbuild"
+            }
+        ],
+        "ServerURL":"https://onebkc.intel.com",
+        "Type":"onebkc"
+    },
+    "Klocwork": {
+        "ServerURL": "https://klocwork-iind6.devtools.intel.com",
+        "ServerPort": "8100",
+        "LicenseHost": "klocwork05p.elic.intel.com",
+        "LicensePort": "7500",
+        "OutputConfiguration": "",
+        "OverWriteDuplicates": true
+    },
+    "Coverity": {
+        "ServerURL": "https://coverityent.devtools.intel.com/prod7/"
+    },
+    "Protex": {
+        "Server": "garprotex009.devtools.intel.com",
+        "ProjectID": "c_sample_windows_18542"
+    },
+    "BinaryScan": {
+        "ServerURL": "https://bdba001.icloud.intel.com",
+        "ServerGroup": "6"
+    },
+    "VulnerabilityScan": {
+        "ServerURL": "https://snyk.devtools.intel.com/api"
+    },
+    "StaticSecurityScan": {
+        "ServerURL": "https://sast.intel.com",
+        "ProjectID": "341077",
+        "IsPublic": true
+    },
+    "Mtcd": {
+        "server_url": "https://api-msftpredriversigning-apim.azure-api.net",
+        "requested_signatures": [
+            "WINDOWS_v100_X64_CO_FULL",
+            "WINDOWS_v100_X64_NI_FULL"
+        ]
+    },
+    "CabinetFile": {
+        "cabinet_name_template": "SampleWin",
+        "disk_directory_template": "CabFiles",
+        "variables": "UniqueFiles=NO,DestinationDir=Sample,CabinetFileCountThreshold=0,FolderFileCountThreshold=0,FolderSizeThreshold=0,MaxCabinetSize=0,MaxDiskFileCount=0,MaxDiskSize=0"
+    },
+    "SubComponents":[
+        {
+            "Name": "SampleWinDriver",
+            "Description": "SampleWinDriverBuild MSBuild",
+            "ProjectFile": "WindowsDriver_DCHU_base/osrfx2_DCHU_base.sln",
+            "ProjectType": "MSBuild",
+            "BuildTarget": "",
+            "CleanTarget": "",
+            "MSBuildVersionProperty": "OWRBuildVersion",
+            "SingleThreadOnly": "",
+            "Verbosity": true,
+            "Klocwork": {
+                "Project": "ENV:KlocworkProject",
+                "Type": "cpp"
+            },
+            "Coverity":{
+                "Stream": "ENV:CoverityStream",
+                "CompilerTemplates":["cs","msvc"],
+                "SkipCoverityScan": false
+            },
+            "Semmle": {
+                "Type": "cpp",
+                "ReportType": ["sarifv2.1.0", "csv"]
+            },
+            "AdditionalFlags": "",
+            "AdditionalEnvVars": ""
+        },
+        {
+            "Name": "SampleWinDriverSDV",
+            "Description": "SampleWinDriverBuild for generating SDV Report",
+            "ProjectFile": "WindowsDriver_DCHU_base/osrfx2_DCHU_base.sln",
+            "ProjectType": "MSBuild",
+            "BuildTarget": "sdv",
+            "CleanTarget": "",
+            "MSBuildVersionProperty": "OWRBuildVersion",
+            "SingleThreadOnly": "",
+            "Verbosity": true,
+            "Klocwork": {
+                "SkipKlocworkScan": true
+            },
+            "AdditionalFlags": "/p:inputs=\"/check:MustFix.sdv\"",
+            "AdditionalEnvVars": ""
+        },
+        {
+            "Name": "SampleWinDriverCA",
+            "Description": "SampleWinDriverBuild for generating CA Report",
+            "ProjectFile": "WindowsDriver_DCHU_base/osrfx2_DCHU_base.sln",
+            "ProjectType": "MSBuild",
+            "BuildTarget": "",
+            "CleanTarget": "",
+            "MSBuildVersionProperty": "OWRBuildVersion",
+            "SingleThreadOnly": "",
+            "Verbosity": true,
+            "Klocwork": {
+                "SkipKlocworkScan": true
+            },
+            "AdditionalFlags": "/P:RunCodeAnalysisOnce=True",
+            "AdditionalEnvVars": ""
+        },
+        {
+            "Name": "SampleWinDriverDVL",
+            "Description": "SampleWinDriverBuild for generating DVL Report",
+            "ProjectFile": "WindowsDriver_DCHU_base/osrfx2_DCHU_base.sln",
+            "ProjectType": "MSBuild",
+            "BuildTarget": "dvl",
+            "CleanTarget": "",
+            "MSBuildVersionProperty": "OWRBuildVersion",
+            "SingleThreadOnly": "",
+            "Verbosity": true,
+            "Klocwork": {
+                "SkipKlocworkScan": true
+            },
+            "AdditionalFlags": "",
+            "AdditionalEnvVars": ""
+        },
+        {
+            "Name": "DotNetFrameWorkApp",
+            "BuildTarget": "DotNetFrameWorkApp",
+            "Description": "DotNetFrameWork Test App",
+            "ProjectFile": "DotNetFrameWorkApp/DotNetFrameWorkApp.sln",
+            "ProjectType": "MSBuild",
+            "Klocwork": {
+                "Project": "ENV:KlocworkProject",
+                "Type": "cpp"
+            },
+            "Coverity":{
+                "Stream": "ENV:CoverityStream",
+                "CompilerTemplates":["cs","msvc"],
+                "SkipCoverityScan": false
+            }
+        },
+        {
+            "Name": "CSharpApp",
+            "Description": "CSharp Sample App",
+            "ProjectFile": "CSharpApp/cspvwindumpingest.netframework.sln",
+            "ProjectType": "MSBuild",
+            "WorkingDirectory":"",
+            "MSBuildVersionProperty":"OWRBuildVersion",
+            "Klocwork": {
+                "Project": "ENV:KlocworkCSharpProject",
+                "Type": "csharp"
+            },
+            "Coverity":{
+                "Stream": "ENV:CoverityCSharpStream",
+                "CompilerTemplates":["cs","msvc"],
+                "SkipCoverityScan": false
+            }
+        },
+        {
+            "Name": "CMakeScriptApp",
+            "Description": "Sample CMake Script App",
+            "ProjectFile": "CMakeApp.bat",
+            "ProjectType": "Script",
+            "WorkingDirectory": "CMakeApp",
+            "AdditionalFlags": "${IngredientPath}",
+            "AdditionalEnvVars": "",
+            "Klocwork":{
+                "Project": "ENV:KlocworkProject",
+                "Type":"cpp"
+            },
+            "Coverity":{
+                "Stream": "ENV:CoverityStream",
+                "CompilerTemplates":["cs","msvc"],
+                "SkipCoverityScan": false
+            }
+        },
+        {
+            "Name": "CMakeApp",
+            "Description": "CMake Sample C App",
+            "ProjectFile": "CMakeApp",
+            "ProjectType": "CMake",
+            "CMakeConfigureFlags": "",
+            "AdditionalFlags": " -- /m /flp:logfile=CMakeApp.log",
+            "Klocwork": {
+                "SkipKlocworkScan": true
+            }
+        },
+        {
+            "Name": "NMakeApp",
+            "Description": "Sample NMake App",
+            "ProjectFile": "nmake/makefile",
+            "ProjectType": "nmake",
+            "NmakeMacros": "project = sample",
+            "AdditionalFlags": "/B /C",
+            "BuildTarget": "foo",
+            "Klocwork": {
+                "SkipKlocworkScan": true
+            }
+        },
+        {
+            "Name": "PythonScriptApp",
+            "Description": "Sample Python App",
+            "ProjectFile": "PythonApp.py",
+            "ProjectType": "Script",
+            "WorkingDirectory": "PythonApp",
+            "AdditionalFlags": "",
+            "AdditionalEnvVars": "",
+            "Klocwork": {
+                "SkipKlocworkScan": true
+            }
+        },
+        {
+            "Name": "DotNetInstallScript",
+            "Description": "DotNet Installation Powershell Script",
+            "ProjectFile": "./DotNetAppInstall.ps1",
+            "WorkingDirectory": "DotNetCoreApp",
+            "AdditionalFlags": "",
+            "AdditionalEnvVars": "",
+            "ProjectType": "Script",
+            "Klocwork":{
+                "SkipKlocworkScan": true
+            }
+        },
+        {
+            "Name": "DotNetCoreApp",
+            "BuildTarget": "DotNetCoreApp",
+            "Description": "DotNetCore Test App",
+            "DotNetCommand": "build",
+            "DotNetFrameWork": "netcoreapp2.1",
+            "DotNetRuntime": "",
+            "AdditionalFlags": "",
+            "ProjectFile": "DotNetCoreApp/DotNetCoreApp.csproj",
+            "ProjectType": "dotnetcore",
+            "Klocwork": {
+                "SkipKlocworkScan": true
+            }
+        },
+        {
+            "Name": "DotNetCoreScriptApp",
+            "Description": "DotNet Core Script App",
+            "ProjectFile": "DotNetCoreApp.bat",
+            "WorkingDirectory": "DotNetCoreApp",
+            "AdditionalFlags": "",
+            "AdditionalEnvVars": "",
+            "ProjectType": "Script",
+            "Klocwork":{
+                "SkipKlocworkScan": true
+            }
+        },
+        {
+            "Name": "ExeScriptTest",
+            "Description": "Custom Script Exe Test",
+            "ProjectFile": "DotNetFrameWorkApp.exe",
+            "WorkingDirectory": "DotNetFrameWorkApp/Output",
+            "AdditionalFlags": "fu bar",
+            "AdditionalEnvVars": "",
+            "ProjectType": "Script",
+            "Sign": false,
+            "Klocwork":{
+                "SkipKlocworkScan": true
+            }
+        }
+    ],
+    "Sign":{
+        "SignRootDir": "OWRBin",
+        "FailOnMissingFile": false,
+        "Operations": [
+            {
+                "Certificate": "AdvancedSystemToolDrivers2022_02",
+                "CertificateHash": "",
+                "Name": "IntelCrossSignDrivers",
+                "HashAlgorithm": "SHA256",
+                "SignRootDir": "OWRBin",
+                "AdditionalFlags": "",
+                "FailOnMissingFile": false,
+                "Files": [
+                    ".*.sys",
+                    ".*.cat",
+                    ".*.exe",
+                    ".*.dll"
+                ]
+            },
+            {
+                "Certificate": "AdvancedSystemToolDrivers2022_02",
+                "CertificateHash": "",
+                "Name": "IntelTestSignDrivers",
+                "HashAlgorithm": "SHA256",
+                "CrossSign": false,
+                "SignRootDir": "OWRBin",
+                "AdditionalFlags": "",
+                "FailOnMissingFile": false,
+                "Files": [
+                    ".*.sys",
+                    ".*.cat",
+                    ".*.exe",
+                    ".*.dll"
+                ]
+            },
+            {
+                "Certificate": "AdvancedSystemToolDrivers2022_02",
+                "CertificateHash": "",
+                "Name": "IntelTestSignCab",
+                "HashAlgorithm": "SHA256",
+                "CrossSign": false,
+                "SignRootDir": "OWRPackage",
+                "AdditionalFlags": "",
+                "FailOnMissingFile": false,
+                "Files": [
+                    ".*.cab"
+                ]
+            }
+        ]
+    },
+    "SchemaVersion": "1.0"
+}

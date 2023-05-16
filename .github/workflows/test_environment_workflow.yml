@@ -1,0 +1,26 @@
+name: Test Enivornment Workflow
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: Present Working Directory
+        run: |
+            pwd
+            ls -a
+            echo $GITHUB_SHA
+            echo $GITHUB_REPOSITORY
+            echo $GITHUB_WORKSPACE
+            echo "${{ github.token }}"
+      - name: "Set Enviroment Variable"
+        run: |
+            set -a # automatically export all variables
+            source .env
+            set +a
+      - name: "Print Build Config File."
+        run: |
+            cat BuildConfig.json
