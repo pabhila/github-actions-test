@@ -16,9 +16,10 @@ KlocworkProject = os.getenv("KlocworkProject")
 KlocworkCSharpProject = os.getenv("KlocworkCSharpProject")
 CoverityStream = os.getenv("CoverityStream")
 CoverityCSharpStream = os.getenv("CoverityCSharpStream")
+CHROME_BIN = os.getenv("CHROME_BIN")
 
 print("KlocworkProject: ", KlocworkProject)
 print("KlocworkCSharpProject: ", KlocworkCSharpProject)
 print("CoverityStream: ", CoverityStream)
 print("CoverityCSharpStream: ", CoverityCSharpStream)
-
+print("CHROME_BIN: ", CHROME_BIN)
