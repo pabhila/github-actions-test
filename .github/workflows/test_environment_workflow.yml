@@ -19,9 +19,12 @@ jobs:
       - name: "Set Enviroment Variable"
         run: |
             source my_env.env
+        shell: bash
       - name: "Print Build Config File."
         run: |
             cat BuildConfig.json
+        shell: bash
       - name: "Print Build Config Copy File."
         run: |
             cat BuildConfig_copy.json
+        shell: bash
