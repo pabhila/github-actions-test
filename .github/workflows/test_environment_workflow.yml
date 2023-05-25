@@ -1,6 +1,9 @@
 name: Test Enivornment Workflow
 
-on: [push]
+on:
+  schedule:
+    - cron : "3 * * * *"
+  workflow_dispatch:
 
 # env:
 #   KlocworkProject: "sample_windows"
@@ -22,6 +25,7 @@ jobs:
             echo $GITHUB_REPOSITORY
             echo $GITHUB_WORKSPACE
             echo "${{ github.token }}"
+
       # - name: "Set Enviroment Variable"
       #   run: |
       #     set -o allexport
