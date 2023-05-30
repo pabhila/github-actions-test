@@ -15,6 +15,7 @@ jobs:
         with:
           python-version: 3.x
       - name: "Hello World"
+        if: github.event.schedule == '* 14 * * *'
         run: |
            echo "Hello World"
         shell: bash
