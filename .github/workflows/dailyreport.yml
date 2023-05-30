@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: 3.x
       - name: "Hello World"
-        if: github.event.schedule == '* 14 * * *'
+        if: github.event.schedule == '* 15 * * *'
         run: |
            echo "Hello World, This Test Branch"
         shell: bash
