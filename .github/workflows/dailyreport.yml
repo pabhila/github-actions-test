@@ -17,5 +17,5 @@ jobs:
       - name: "Hello World"
         if: github.event.schedule == '* 14 * * *'
         run: |
-           echo "Hello World"
+           echo "Hello World, This Test Branch"
         shell: bash
