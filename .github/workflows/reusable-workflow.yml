@@ -15,3 +15,11 @@ jobs:
         run: |
           echo ${{ inputs.config-path }}
         shell: bash
+      - name: "Hello"
+        run: |
+          echo ${{ inputs.config-path }}
+        shell: bash
+      - name: "Hello"
+        run: |
+          echo ${{ inputs.config-path }}
+        shell: bash
