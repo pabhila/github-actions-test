@@ -7,19 +7,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  # build:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - uses: actions/setup-python@v2
-  #       with:
-  #         python-version: 3.x
-  #     - name: "Hello World"
-  #       run: |
-  #          echo "Hello World"
-  #       shell: bash
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: "Hello World"
+        run: |
+           echo "Hello World"
+        shell: bash
   
   call-workflow-passing-data:
+    needs: [build]
     uses: ./.github/workflows/reusable-workflow.yml
     with:
       config-path: "this is the config path"
