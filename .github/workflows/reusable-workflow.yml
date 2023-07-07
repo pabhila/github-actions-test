@@ -23,3 +23,7 @@ jobs:
         run: |
           echo ${{ inputs.config-path }}
         shell: bash
+      - name: "Print Environment"
+        run: |
+           echo ${{ env.COVERITYCSHARPSTREAM }}
+        shell: bash
