@@ -13,5 +13,5 @@ jobs:
     steps:
       - name: "Hello"
         run: |
-          echo {{ inputs.config-path }}
+          echo ${{ inputs.config-path }}
         shell: bash
