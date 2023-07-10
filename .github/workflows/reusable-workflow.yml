@@ -25,5 +25,5 @@ jobs:
         shell: bash
       - name: "Print Environment"
         run: |
-           echo ${{ vars.COVERITYCSHARPSTREAM }}
+           echo ${{ env.COVERITYCSHARPSTREAM }}
         shell: bash
