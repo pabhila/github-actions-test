@@ -16,8 +16,8 @@ jobs:
           python-version: 3.x
       - name: "Hello World"
         run: |
-           echo "Hello World"
-        shell: bash
+           Write-Output "This Line is run on the local machine"
+        shell: pwsh
   
   # call-workflow-passing-data:
   #   needs: [build]
