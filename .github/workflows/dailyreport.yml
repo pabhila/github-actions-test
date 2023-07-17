@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, pabhila-local-machine]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -19,8 +19,8 @@ jobs:
            echo "Hello World"
         shell: bash
   
-  call-workflow-passing-data:
-    needs: [build]
-    uses: ./.github/workflows/reusable-workflow.yml
-    with:
-      config-path: "this is the config path"
+  # call-workflow-passing-data:
+  #   needs: [build]
+  #   uses: ./.github/workflows/reusable-workflow.yml
+  #   with:
+  #     config-path: "this is the config path"
