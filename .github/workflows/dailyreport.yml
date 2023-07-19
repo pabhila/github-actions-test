@@ -44,9 +44,20 @@ jobs:
     runs-on: ubuntu-latest
     name: BuildSampleDotNetCoreApp
     steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: Present Working Directory
+        run: |
+            pwd
+            ls -a
+            echo $GITHUB_SHA
+            echo $GITHUB_REPOSITORY
+            echo $GITHUB_WORKSPACE
+            echo "${{ github.token }}"
+        shell: bash
       - name: "ABI Build"
         id: "ABIBuild"  
-        uses: ./composite_workflow
+        uses: ./composite_workflow@main
         with:
           abi_version: $ABICORE_VER
           ingredient_path: $INGREDIENT_PATH
