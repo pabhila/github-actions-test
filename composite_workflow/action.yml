@@ -11,7 +11,17 @@ inputs:
 runs:
   using: "composite"
   steps:
-
+    - name: checkout repo
+      uses: actions/checkout@v2
+    - name: Present Working Directory
+      run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{ github.token }}"
+      shell: bash
     # //TODO: check if already installed then dont install again, unless force install specified.
     - name: "Run abi_init"
       id: "ABIInstall"
