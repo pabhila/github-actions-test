@@ -46,7 +46,7 @@ jobs:
     steps:
       - name: "ABI Build"
         id: "ABIBuild"  
-        uses: ./.github/workflows/composite_workflow.yml
+        uses: ./composite_workflow
         with:
           abi_version: $ABICORE_VER
           ingredient_path: $INGREDIENT_PATH
