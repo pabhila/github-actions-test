@@ -15,7 +15,7 @@ runs:
     - name: "Run abi_init"
       id: "ABIInstall"
       run: |
-        echo ${{ inputs.ingredient_path }}
-        echo ${{ inputs.abi_version }}
-        echo ${{ env.MANIFEST }}
+        echo "Ingredient Path: ${{ inputs.ingredient_path }}"
+        echo "ABI Version: ${{ inputs.abi_version }}"
+        echo "Manifest File: ${{ env.MANIFEST }}"
       shell: bash
