@@ -6,21 +6,48 @@ on:
   #   - cron: '* 14 * * *'
   workflow_dispatch:
 
+env:
+  ABICORE_VER: develop
+  BuildVersionPrefix: "1.0.00"
+  TicGenProjectName: "sample-gh-ticgen"
+  COVERITY_UNSUPPORTED: 1
+  INGREDIENT_PATH: "src/windows"
+  BUILD_CONFIG: "IDF/BuildConfig.json"
+  MANIFEST: "IDF/Manifest.xml"
+  EWDK: "22000.Co.1052"
+  KlocworkProject: "sample_windows"
+  KlocworkCSharpProject: "sample_windows_csharp"
+  CoverityStream: "CCG-ADO-BA-SAMPLE-WINDOWS-C-DEVELOP"
+  CoverityCSharpStream: "CCG-ADO-BA-SAMPLE-WINDOWS-CSHARP-DEVELOP"
+
 jobs:
-  build:
-    runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
-      - name: "Hello World"
-        run: |
-           Write-Output "This Line is run on the local machine"
-        shell: pwsh
+  # build:
+  #   # runs-on: self-hosted
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-python@v2
+  #       with:
+  #         python-version: 3.x
+  #     - name: "Hello World"
+  #       run: |
+  #          Write-Output "This Line is run on the local machine"
+  #       shell: pwsh
   
   # call-workflow-passing-data:
   #   needs: [build]
-  #   uses: ./.github/workflows/reusable-workflow.yml
+  #   uses: ./.github/workflows/composite_workflow.yml
   #   with:
   #     config-path: "this is the config path"
+
+  call-workflow-passing-data:
+    runs-on: ubuntu-latest
+    name: BuildSampleDotNetCoreApp
+    steps:
+      - name: "ABI Build"
+        id: "ABIBuild"  
+        uses: ./.github/workflows/composite_workflow.yml
+        with:
+          abi_version: $ABICORE_VER
+          ingredient_path: $INGREDIENT_PATH
+  

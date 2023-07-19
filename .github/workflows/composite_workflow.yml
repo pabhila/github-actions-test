@@ -1,0 +1,22 @@
+name: 'composite_workflow_example'
+description: 'Composite workflow example'
+inputs:
+  abi_version:
+    description: 'Specify abi version to initialize, only when skip_abiinstall is false'
+    required: false
+  ingredient_path:
+    description: 'Specify ingredient_path, only when skip_abiinstall is false'
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+
+    # //TODO: check if already installed then dont install again, unless force install specified.
+    - name: "Run abi_init"
+      id: "ABIInstall"
+      run: |
+        echo ${{ inputs.ingredient_path }}
+        echo ${{ inputs.abi_version }}
+        echo ${{ env.MANIFEST }}
+      shell: bash
