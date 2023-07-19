@@ -57,7 +57,7 @@ jobs:
         shell: bash
       - name: "ABI Build"
         id: "ABIBuild"  
-        uses: ./composite_workflow@main
+        uses: ./composite_workflow
         with:
           abi_version: $ABICORE_VER
           ingredient_path: $INGREDIENT_PATH
