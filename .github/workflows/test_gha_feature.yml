@@ -1,0 +1,22 @@
+name: Sample
+
+on: push
+
+jobs:
+
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - id: step1
+        run: echo "job_output=output_value" >> $GITHUB_OUTPUT
+    outputs:
+      job1_output: ${{ steps.step1.outputs.job_output }}
+
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    env:
+      MY_VARIABLE: ${{ needs.job1.outputs.job1_output }}
+    steps:
+      - name: Use output from job1 as env variable
+        run: echo "The value of MY_VARIABLE is ${MY_VARIABLE}"
