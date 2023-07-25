@@ -19,4 +19,4 @@ jobs:
       MY_VARIABLE: ${{ needs.job1.outputs.job1_output }}
     steps:
       - name: Use output from job1 as env variable
-        run: echo "The value of MY_VARIABLE is ${MY_VARIABLE}"
+        run: echo "The value of MY_VARIABLE is $MY_VARIABLE"
