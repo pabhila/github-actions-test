@@ -61,4 +61,25 @@ jobs:
         with:
           abi_version: $ABICORE_VER
           ingredient_path: $INGREDIENT_PATH
+
+  step_loop_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        id: step1
+        run: echo "Step 1 executed"
+
+      - name: Step 2
+        id: step2
+        run: echo "Step 2 executed"
+
+  loop_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Loop Step 1
+        uses: ${{ needs.step_loop_job.outputs.step1 }}
+      
+      - name: Loop Step 2
+        uses: ${{ needs.step_loop_job.outputs.step2 }}
+
   
