@@ -121,4 +121,13 @@ jobs:
            echo '${{ toJSON(inputs) }}'
         shell: bash
 
+  SDLeAutomation:
+    runs-on: ubuntu-latest
+    name: SDLeAutomation
+    if: ${{ inputs.SdleAutomation == false && inputs.ReleaseBuild == true }}
+    steps:
+        - name: "SdleAutomation is False and Release Build is true"
+          run: |
+             echo '${{ toJSON(inputs) }}'
+          shell: bash
   
