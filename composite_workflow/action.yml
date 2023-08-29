@@ -19,5 +19,5 @@ runs:
         echo "ABI Version: ${{ inputs.abi_version }}"
         echo "Manifest File: ${{ env.MANIFEST }}"
         echo "TRIVY_SCAN_INTERMEDIATE_FOLDER=${{ format('{0}/{1}', 'Jellow', 'TrivyScan') }}" >> $GITHUB_ENV
-        echo ${{ env.TRIVY_SCAN_INTERMEDIATE_FOLDER }}
+        echo $TRIVY_SCAN_INTERMEDIATE_FOLDER
       shell: bash
