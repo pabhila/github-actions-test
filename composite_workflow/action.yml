@@ -21,3 +21,12 @@ runs:
         echo "TRIVY_SCAN_INTERMEDIATE_FOLDER=${{ format('{0}/{1}', 'Jellow', 'TrivyScan') }}" >> $GITHUB_ENV
         echo "${{ toJSON(env) }}" 
       shell: bash
+    
+    - id: set_variable
+      run: echo "VariableValue=Hello, World!"
+      shell: bash
+      
+    - run: |
+        my_variable=${{ steps.set_variable.outputs.VariableValue }}
+        formatted_string="Formatted: {{ format('Value: {0}', steps.set_variable.outputs.VariableValue) }}"
+        echo "$formatted_string"
