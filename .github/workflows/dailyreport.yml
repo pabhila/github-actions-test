@@ -74,27 +74,27 @@ jobs:
   #   with:
   #     config-path: "this is the config path"
 
-  # call-workflow-passing-data:
-  #   runs-on: ubuntu-latest
-  #   name: BuildSampleDotNetCoreApp
-  #   steps:
-  #     - name: checkout repo
-  #       uses: actions/checkout@v2
-  #     - name: Present Working Directory
-  #       run: |
-  #           pwd
-  #           ls -a
-  #           echo $GITHUB_SHA
-  #           echo $GITHUB_REPOSITORY
-  #           echo $GITHUB_WORKSPACE
-  #           echo "${{ github.token }}"
-  #       shell: bash
-  #     - name: "ABI Build"
-  #       id: "ABIBuild"  
-  #       uses: ./composite_workflow
-  #       with:
-  #         abi_version: $ABICORE_VER
-  #         ingredient_path: $INGREDIENT_PATH
+  call-workflow-passing-data:
+    runs-on: ubuntu-latest
+    name: BuildSampleDotNetCoreApp
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: Present Working Directory
+        run: |
+            pwd
+            ls -a
+            echo $GITHUB_SHA
+            echo $GITHUB_REPOSITORY
+            echo $GITHUB_WORKSPACE
+            echo "${{ github.token }}"
+        shell: bash
+      - name: "ABI Build"
+        id: "ABIBuild"  
+        uses: ./composite_workflow
+        with:
+          abi_version: $ABICORE_VER
+          ingredient_path: $INGREDIENT_PATH
 
   # step_loop_job:
   #   runs-on: ubuntu-latest
@@ -107,27 +107,27 @@ jobs:
   #       id: step2
   #       run: echo "Step 2 executed"
 
-  loop_job:
-    runs-on: ubuntu-latest
-    steps:
-      # - name: Loop Step 1
-      #   uses: ${{ needs.step_loop_job.outputs.step1 }}
+  # loop_job:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     # - name: Loop Step 1
+  #     #   uses: ${{ needs.step_loop_job.outputs.step1 }}
       
-      # - name: Loop Step 2
-      #   uses: ${{ needs.step_loop_job.outputs.step2 }}
+  #     # - name: Loop Step 2
+  #     #   uses: ${{ needs.step_loop_job.outputs.step2 }}
 
-      - name: "Inputs"
-        run: |
-           echo '${{ toJSON(inputs) }}'
-        shell: bash
+  #     - name: "Inputs"
+  #       run: |
+  #          echo '${{ toJSON(inputs) }}'
+  #       shell: bash
 
-  SDLeAutomation:
-    runs-on: ubuntu-latest
-    name: SDLeAutomation
-    if: ${{ inputs.SdleAutomation == false && inputs.ReleaseBuild == true }}
-    steps:
-        - name: "SdleAutomation is False and Release Build is true"
-          run: |
-             echo '${{ toJSON(inputs) }}'
-          shell: bash
+  # SDLeAutomation:
+  #   runs-on: ubuntu-latest
+  #   name: SDLeAutomation
+  #   if: ${{ inputs.SdleAutomation == false && inputs.ReleaseBuild == true }}
+  #   steps:
+  #       - name: "SdleAutomation is False and Release Build is true"
+  #         run: |
+  #            echo '${{ toJSON(inputs) }}'
+  #         shell: bash
   
