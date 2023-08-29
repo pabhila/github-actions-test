@@ -30,3 +30,4 @@ runs:
         my_variable=${{ steps.set_variable.outputs.VariableValue }}
         formatted_string="Formatted: {{ format('Value: {0}', steps.set_variable.outputs.VariableValue) }}"
         echo "$formatted_string"
+    shell: bash
