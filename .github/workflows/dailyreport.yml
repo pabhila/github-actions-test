@@ -100,7 +100,7 @@ jobs:
         run: |
           ingredient_path=${{env.INGREDIENT_PATH}}
           ingredient_version=${{env.INGREDIENT_VERSION}}
-          echo  ${{ format('{ "ingredient_path": {0}, "ingredient_version": {1} }', ${{env.INGREDIENT_PATH}}, ${{env.INGREDIENT_VERSION}} ) }} > cypress.json
+          echo  ${{ format('{ "ingredient_path": {0}, "ingredient_version": {1} }', env.INGREDIENT_PATH, env.INGREDIENT_VERSION ) }} > cypress.json
           cat cypress.json
   # step_loop_job:
   #   runs-on: ubuntu-latest
