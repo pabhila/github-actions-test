@@ -100,7 +100,7 @@ jobs:
         run: |
           ingredient_path=$INGREDIENT_PATH
           ingredient_version=$INGREDIENT_VERSION
-          echo '{ "ingredient_path": "$INGREDIENT_PATH", "ingredient_version": "$INGREDIENT_VERSION" }' > cypress.json
+          echo '{ "ingredient_path": $INGREDIENT_PATH, "ingredient_version": $INGREDIENT_VERSION }' > cypress.json
           cat cypress.json
   # step_loop_job:
   #   runs-on: ubuntu-latest
