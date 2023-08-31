@@ -95,12 +95,9 @@ jobs:
         with:
           abi_version: $ABICORE_VER
           ingredient_path: $INGREDIENT_PATH
-      - name: "Generate BuildConfig"
-      	run: |
-        	    json_content='{"ingredient_name": "hello","ingredient_version":"1132132"}'
-              echo "$json_content" > "$Buildconfig_path"
-      	shell: bash
-
+      - name: Create Cypress config files
+        run: |
+          echo '{ "baseUrl": "<hardcoded-redacted-value>", "env": { "roles": { "admin": { "PASSWORD": "<hardcoded-redacted-value>", "USERNAME": "<hardcoded-redacted-value>" } } } }' > cypress.json
   # step_loop_job:
   #   runs-on: ubuntu-latest
   #   steps:
