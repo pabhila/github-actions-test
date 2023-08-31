@@ -97,9 +97,9 @@ jobs:
           ingredient_path: $INGREDIENT_PATH
       - name: "Generate BuildConfig"
       	run: |
-        	  json_content='{"ingredient_name": ${{ env.env.ABSOLUTE_CUSTOM_WORKSPACE }},"ingredient_version": ${{ env.IngredientVersion }}}'
-        	  Buildconfig_path=${{ format('{0}/{1}/{2}.json', env.ABSOLUTE_CUSTOM_WORKSPACE, env.IngredientPath, 'BuildConfig') }}
-            echo "$json_content" > "$Buildconfig_path"
+        	    json_content='{"ingredient_name": ${{ env.env.ABSOLUTE_CUSTOM_WORKSPACE }},"ingredient_version": ${{ env.IngredientVersion }}}'
+        	    Buildconfig_path=${{ format('{0}/{1}/{2}.json', env.ABSOLUTE_CUSTOM_WORKSPACE, env.IngredientPath, 'BuildConfig') }}
+              echo "$json_content" > "$Buildconfig_path"
       	shell: bash
 
   # step_loop_job:
