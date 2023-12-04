@@ -34,4 +34,6 @@ jobs:
       - run: npm install -g bats
 
 # Finally, you'll run the `bats` command with a parameter that outputs the software version.
-      - run: bats -v
+      - run: |
+           bats -v
+           ls ${{ github.action_path }}
