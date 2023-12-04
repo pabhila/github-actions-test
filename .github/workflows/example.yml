@@ -36,4 +36,4 @@ jobs:
 # Finally, you'll run the `bats` command with a parameter that outputs the software version.
       - run: |
            bats -v
-           ls ${{ github.action_path }}
+           ls ${{ github.action_path }}/.github/
