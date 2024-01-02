@@ -1,150 +1,28 @@
-name: daily-report
+name: My Workflow
 
 on:
+  push:
+    branches:
+      - main
+
   workflow_dispatch:
     inputs:
-      ReleaseBuild:
-        description: 'Enable for Release Build trigger'
-        required: false
-        type: boolean
-        default: true
-      Scans:
-        description: 'Enable to run all Scans'
-        required: false
-        type: boolean
-        default: false
-      PreProdSign:
-        description: 'Enable MTCD PreProdSign'
-        required: false
-        type: boolean
-        default: false
-      SdleAutomation:
-        description: 'Enable SDLe Automation'
-        required: false
-        type: boolean
-        default: false
-      SdleAutomationDryRun:
-        description: 'Enable SDLe Automation in Dry Run Mode'
-        required: false
-        type: boolean
-        default: true
-      SdleUrl:
-        description: 'Enter SDLe Submission URL'
-        required: false
-        type: string
-        default: 'https://sdl-e.app.intel.com/project?id=ebba4452-b3ab-4d6a-8648-0e99759d7cc4'
-      SdleId:
-        description: 'Enter SDLe Project ID'
-        required: false
-        type: string
-        default: '1916'
-  push:
-
-env:
-  ABICORE_VER: develop
-  BuildVersionPrefix: "1.0.00"
-  TicGenProjectName: "sample-gh-ticgen"
-  COVERITY_UNSUPPORTED: 1
-  INGREDIENT_PATH: "src/windows"
-  INGREDIENT_VERSION: "1.0.0.0.1"
-  BUILD_CONFIG: "IDF/BuildConfig.json"
-  MANIFEST: "IDF/Manifest.xml"
-  EWDK: "22000.Co.1052"
-  KlocworkProject: "sample_windows"
-  KlocworkCSharpProject: "sample_windows_csharp"
-  CoverityStream: "CCG-ADO-BA-SAMPLE-WINDOWS-C-DEVELOP"
-  CoverityCSharpStream: "CCG-ADO-BA-SAMPLE-WINDOWS-CSHARP-DEVELOP"
+      parameter1:
+        description: 'Input parameter 1'
+        required: true
+      parameter2:
+        description: 'Input parameter 2'
+        required: true
 
 jobs:
-
-  build:
-    # runs-on: self-hosted
+  my_job:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: "Hello Worlds"
-        run: |
-            echo "${{tojson(github.event.inputs)}}"
-            echo "${{tojson(inputs)}}"
-            echo "${{tojson(github.event.inputs.ReleaseBuild)}}"
-        shell: bash
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-  # build:
-  #   # runs-on: self-hosted
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - uses: actions/setup-python@v2
-  #       with:
-  #         python-version: 3.x
-  #     - name: "Hello World"
-  #       run: |
-  #          Write-Output "This Line is run on the local machine"
-  #       shell: pwsh
-  
-  # call-workflow-passing-data:
-  #   needs: [build]
-  #   uses: ./.github/workflows/composite_workflow.yml
-  #   with:
-  #     config-path: "this is the config path"
-  # call-workflow-passing-data:
-  #   runs-on: ubuntu-latest
-  #   name: BuildSampleDotNetCoreApp
-  #   steps:
-  #     - name: checkout repo
-  #       uses: actions/checkout@v2
-  #     - name: Present Working Directory
-  #       run: |
-  #           pwd
-  #           ls -a
-  #           echo $GITHUB_SHA
-  #           echo $GITHUB_REPOSITORY
-  #           echo $GITHUB_WORKSPACE
-  #           echo "${{ github.token }}"
-  #       shell: bash
-  #     - name: "ABI Build"
-  #       id: "ABIBuild"  
-  #       uses: ./composite_workflow
-  #       with:
-  #         abi_version: $ABICORE_VER
-  #         ingredient_path: $INGREDIENT_PATH
-  #     - name: Create Cypress config files
-  #       run: |
-  #         ingredient_path=${{ env.INGREDIENT_PATH }}
-  #         ingredient_version=${{ env.INGREDIENT_VERSION }}
-  #         echo '{ "ingredient_path": ${ingredient_path}, "ingredient_version": ${ingredient_version} }' > cypress.json
-  #         cat cypress.json
-  # step_loop_job:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Step 1
-  #       id: step1
-  #       run: echo "Step 1 executed"
-
-  #     - name: Step 2
-  #       id: step2
-  #       run: echo "Step 2 executed"
-
-  # loop_job:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     # - name: Loop Step 1
-  #     #   uses: ${{ needs.step_loop_job.outputs.step1 }}
-      
-  #     # - name: Loop Step 2
-  #     #   uses: ${{ needs.step_loop_job.outputs.step2 }}
-
-  #     - name: "Inputs"
-  #       run: |
-  #          echo '${{ toJSON(inputs) }}'
-  #       shell: bash
-
-  # SDLeAutomation:
-  #   runs-on: ubuntu-latest
-  #   name: SDLeAutomation
-  #   if: ${{ inputs.SdleAutomation == false && inputs.ReleaseBuild == true }}
-  #   steps:
-  #       - name: "SdleAutomation is False and Release Build is true"
-  #         run: |
-  #            echo '${{ toJSON(inputs) }}'
-  #         shell: bash
-  
+    - name: Run my script
+      run: |
+        echo "Input Parameter 1: ${{ github.event.inputs.parameter1 }}"
+        echo "Input Parameter 2: ${{ github.event.inputs.parameter2 }}"
