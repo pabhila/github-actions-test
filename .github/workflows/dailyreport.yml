@@ -65,6 +65,7 @@ jobs:
         run: |
             echo "${{tojson(github.event.inputs)}}"
             echo "${{tojson(inputs)}}"
+            echo "${{tojson(github.event.inputs.ReleaseBuild)}}"
         shell: bash
 
   # build:
