@@ -63,8 +63,8 @@ jobs:
     steps:
       - name: "Hello Worlds"
         run: |
-            echo ${{tojson(github.event.inputs)}}
-            echo ${{tojson(inputs)}}
+            echo "${{tojson(github.event.inputs)}}"
+            echo "${{tojson(inputs)}}"
         shell: bash
 
   # build:
