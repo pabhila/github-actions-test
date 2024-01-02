@@ -23,10 +23,10 @@ jobs:
     steps:
 
 # The `uses` keyword specifies that this step will run `v4` of the `actions/checkout` action. This is an action that checks out your repository onto the runner, allowing you to run scripts or other actions against your code (such as build and test tools). You should use the checkout action any time your workflow will use the repository's code.
-      - uses: actions/checkout@${{ vars.CHECKOUT_VERSION }}
+      - uses: actions/checkout@v4
 
 # This step uses the `actions/setup-node@v3` action to install the specified version of the Node.js. (This example uses version 14.) This puts both the `node` and `npm` commands in your `PATH`.
-      - uses: actions/setup-node@${{ vars.SETUP_NODE }}
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
@@ -34,4 +34,6 @@ jobs:
       - run: npm install -g bats
 
 # Finally, you'll run the `bats` command with a parameter that outputs the software version.
-      - run: bats -v
+      - run: |
+           bats -v
+           ls ${{ github.action_path }}/.github/
