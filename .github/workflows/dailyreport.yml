@@ -63,9 +63,9 @@ jobs:
     steps:
       - name: "Hello Worlds"
         run: |
-            echo ${{github.event.inputs}}
+            echo ${{tojson(github.event.inputs)}}
             echo ${{tojson(inputs)}}
-        shell: pwsh
+        shell: bash
 
   # build:
   #   # runs-on: self-hosted
