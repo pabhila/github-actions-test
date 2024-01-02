@@ -38,7 +38,7 @@ on:
         required: false
         type: string
         default: '1916'
-
+  push:
 
 env:
   ABICORE_VER: develop
@@ -56,6 +56,17 @@ env:
   CoverityCSharpStream: "CCG-ADO-BA-SAMPLE-WINDOWS-CSHARP-DEVELOP"
 
 jobs:
+
+  build:
+    # runs-on: self-hosted
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello World"
+        run: |
+            echo ${{tojson(github.event.inputs)}}
+            echo ${{tojson(inputs)}}
+        shell: pwsh
+
   # build:
   #   # runs-on: self-hosted
   #   runs-on: ubuntu-latest
@@ -74,34 +85,33 @@ jobs:
   #   uses: ./.github/workflows/composite_workflow.yml
   #   with:
   #     config-path: "this is the config path"
-
-  call-workflow-passing-data:
-    runs-on: ubuntu-latest
-    name: BuildSampleDotNetCoreApp
-    steps:
-      - name: checkout repo
-        uses: actions/checkout@v2
-      - name: Present Working Directory
-        run: |
-            pwd
-            ls -a
-            echo $GITHUB_SHA
-            echo $GITHUB_REPOSITORY
-            echo $GITHUB_WORKSPACE
-            echo "${{ github.token }}"
-        shell: bash
-      - name: "ABI Build"
-        id: "ABIBuild"  
-        uses: ./composite_workflow
-        with:
-          abi_version: $ABICORE_VER
-          ingredient_path: $INGREDIENT_PATH
-      - name: Create Cypress config files
-        run: |
-          ingredient_path=${{ env.INGREDIENT_PATH }}
-          ingredient_version=${{ env.INGREDIENT_VERSION }}
-          echo '{ "ingredient_path": ${ingredient_path}, "ingredient_version": ${ingredient_version} }' > cypress.json
-          cat cypress.json
+  # call-workflow-passing-data:
+  #   runs-on: ubuntu-latest
+  #   name: BuildSampleDotNetCoreApp
+  #   steps:
+  #     - name: checkout repo
+  #       uses: actions/checkout@v2
+  #     - name: Present Working Directory
+  #       run: |
+  #           pwd
+  #           ls -a
+  #           echo $GITHUB_SHA
+  #           echo $GITHUB_REPOSITORY
+  #           echo $GITHUB_WORKSPACE
+  #           echo "${{ github.token }}"
+  #       shell: bash
+  #     - name: "ABI Build"
+  #       id: "ABIBuild"  
+  #       uses: ./composite_workflow
+  #       with:
+  #         abi_version: $ABICORE_VER
+  #         ingredient_path: $INGREDIENT_PATH
+  #     - name: Create Cypress config files
+  #       run: |
+  #         ingredient_path=${{ env.INGREDIENT_PATH }}
+  #         ingredient_version=${{ env.INGREDIENT_VERSION }}
+  #         echo '{ "ingredient_path": ${ingredient_path}, "ingredient_version": ${ingredient_version} }' > cypress.json
+  #         cat cypress.json
   # step_loop_job:
   #   runs-on: ubuntu-latest
   #   steps:
