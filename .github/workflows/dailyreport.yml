@@ -61,7 +61,7 @@ jobs:
     # runs-on: self-hosted
     runs-on: ubuntu-latest
     steps:
-      - name: "Hello World"
+      - name: "Hello Worlds"
         run: |
             echo ${{tojson(github.event.inputs)}}
             echo ${{tojson(inputs)}}
