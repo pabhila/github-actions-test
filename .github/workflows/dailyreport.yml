@@ -28,3 +28,7 @@ jobs:
         echo "github.env: ${{ github.env }}"
         echo "github.event_path: ${{ github.event_path }}"
         echo "github.path: ${{ github.path }}"
+        for file in .github/workflows/*.yml; do
+            workflow_name=$(basename "$file" .yml)
+            echo "- $workflow_name"
+        done
