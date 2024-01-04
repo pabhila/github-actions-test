@@ -32,3 +32,4 @@ jobs:
             workflow_name=$(basename "$file" .yml)
             echo "- $workflow_name"
         done
+        ls -l
