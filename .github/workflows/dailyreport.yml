@@ -26,3 +26,7 @@ jobs:
       run: |
         echo "Input Parameter 1: ${{ github.event.inputs.parameter1 }}"
         echo "Input Parameter 2: ${{ github.event.inputs.parameter2 }}"
+        echo "${{ github.action_path }}"
+        echo "${{ github.env }}"
+        echo "${{ github.event_path }}"
+        echo "${{ github.path }}"
