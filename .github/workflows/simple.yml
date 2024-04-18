@@ -27,11 +27,9 @@ jobs:
       - name: EndsWith - Check for Specific Keywords
         if: ${{ endsWith(github.event.pull_request.title, 'Test') }} 
         run: | 
-            # Actions to execute when 'Update' or 'Fix' are found
-            echo "PR title when 'Update' or 'Fix' are found"
+            echo "PR title when 'Test'
       - name: startsWith - Check for Specific Keywords
         if: ${{ startsWith(github.event.pull_request.title, 'Test') }} 
         run: | 
-            # Actions to execute when 'Update' or 'Fix' are found
-            echo "PR title when 'Update' or 'Fix' are found"
+            echo "PR title when 'Test'
   
