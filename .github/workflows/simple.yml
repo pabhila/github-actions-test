@@ -6,8 +6,16 @@ jobs:
   title_check:
     runs-on: ubuntu-latest
     steps:
+      - name: Analyze the Event Pull
+        run: |
+          new_title="${{ github.event.pull_request }}"
+          echo "The updated PR title is: $new_title"
+      - name: Analyze the Edited Title
+        run: |
+          new_title="${{ github.event.pull_request.title }}"
+          echo "The updated PR title is: $new_title"
       - name: Action for Other Titles 
-        if: ${{ !contains(github.event.pull_request.title, 'Important') }} 
+        if: ${{ contains(github.event.pull_request.title, 'Important') }} 
         run: | 
           echo "PR title does not contain the word 'Important'"
           # Add your actions here for titles not meeting the condition 
@@ -16,3 +24,14 @@ jobs:
         run: | 
           # Actions to execute when 'Update' or 'Fix' are found
           echo "PR title when 'Update' or 'Fix' are found"
+      - name: EndsWith - Check for Specific Keywords
+        if: ${{ endsWith(github.event.pull_request.title, 'Test') }} 
+        run: | 
+            # Actions to execute when 'Update' or 'Fix' are found
+            echo "PR title when 'Update' or 'Fix' are found"
+      - name: startsWith - Check for Specific Keywords
+        if: ${{ startsWith(github.event.pull_request.title, 'Test') }} 
+        run: | 
+            # Actions to execute when 'Update' or 'Fix' are found
+            echo "PR title when 'Update' or 'Fix' are found"
+  
