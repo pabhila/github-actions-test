@@ -1,0 +1,11 @@
+name: BundleInstallerRelease
+on:
+  push:
+    branches:
+      - release_*
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release Job
+        run: echo "Running BundleInstallerRelease"

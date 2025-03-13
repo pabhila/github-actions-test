@@ -1,0 +1,15 @@
+name: ExpandedBundleInstaller
+on:
+  workflow_run:
+    workflows: ["BundleInstallerRelease"]
+    types:
+      - completed
+    branches:
+      - release_*
+
+jobs:
+  expanded:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Expanded Job
+        run: echo "Running ExpandedBundleInstaller after Release is done!"
