@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Release Job
-        run: echo "Running BundleInstallerRelease...."
+        run: echo "Running BundleInstallerRelease....."
