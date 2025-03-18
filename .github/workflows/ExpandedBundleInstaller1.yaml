@@ -13,3 +13,7 @@ jobs:
     steps:
       - name: Expanded Job
         run: echo "Running ExpandedBundleInstaller after Release is done!"
+      - name: Branch_Name
+        run: echo "${{ github.event.workflow_run.head_branch }}"
+      - name: Workflow_Branch_Main
+        run: echo "release_1"
