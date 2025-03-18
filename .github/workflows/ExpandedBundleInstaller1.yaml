@@ -6,6 +6,7 @@ on:
       - completed
     branches:
       - release_*
+      - main
 
 jobs:
   expanded:
