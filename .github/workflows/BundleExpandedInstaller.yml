@@ -1,11 +1,4 @@
 name: ExpandedBundleInstaller
-on:
-  workflow_run:
-    workflows: ["BundleInstallerRelease"]
-    types:
-      - completed
-    branches:
-      - release_*
 
 jobs:
   expanded:
