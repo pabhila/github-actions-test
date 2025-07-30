@@ -40,30 +40,25 @@ def send_email(recipient_email, subject, body, smtp_server, smtp_port, sender_em
     """
     Send email using SMTP
     """
-    try:
-        # Create message
-        message = MIMEMultipart()
-        message["From"] = sender_email
-        message["To"] = recipient_email
-        message["Subject"] = subject
-        
-        # Add body to email
-        message.attach(MIMEText(body, "html"))
-        
-        # Create SMTP session
-        server = smtplib.SMTP('smtp.intel.com', 25)
-        
-        # Send email
-        text = message.as_string()
-        server.sendmail(sender_email, recipient_email, text)
-        server.quit()
-        
-        print(f"✅ Email sent successfully to {recipient_email}")
-        return True
-        
-    except Exception as e:
-        print(f"❌ Error sending email: {str(e)}")
-        return False
+    # Create message
+    message = MIMEMultipart()
+    message["From"] = sender_email
+    message["To"] = recipient_email
+    message["Subject"] = subject
+    
+    # Add body to email
+    message.attach(MIMEText(body, "html"))
+    
+    # Create SMTP session
+    server = smtplib.SMTP('smtp.intel.com', 25)
+    
+    # Send email
+    text = message.as_string()
+    server.sendmail(sender_email, recipient_email, text)
+    server.quit()
+    
+    print(f"✅ Email sent successfully to {recipient_email}")
+    return True
 
 def main():
     # Get environment variables
