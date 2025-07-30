@@ -51,7 +51,7 @@ def send_email(recipient_email, subject, body, smtp_server, smtp_port, sender_em
         message.attach(MIMEText(body, "html"))
         
         # Create SMTP session
-        server = smtplib.SMTP(smtp_server, smtp_port)
+        server = smtplib.SMTP('smtp.intel.com', 25)
         server.starttls()  # Enable security
         
         # Send email
