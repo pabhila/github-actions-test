@@ -3,18 +3,12 @@ name: Test Enivornment Workflow
 on:
   workflow_dispatch:
 
-# env:
-#   KlocworkProject: "sample_windows"
-#   KlocworkCSharpProject: "sample_windows_csharp"
-#   CoverityStream: "CCG-ADO-BA-SAMPLE-WINDOWS-C-DEVELOP"
-#   CoverityCSharpStream: "CCG-ADO-BA-SAMPLE-WINDOWS-CSHARP-DEVELOP"
-
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Present Working Directory
         run: |
             pwd
@@ -23,33 +17,12 @@ jobs:
             echo $GITHUB_REPOSITORY
             echo $GITHUB_WORKSPACE
             echo "${{ github.token }}"
-
-      # - name: "Set Enviroment Variable"
-      #   run: |
-      #     set -o allexport
-      #     source my_env.env
-      #     set +o allexport
-      #   shell: bash
-      # - name: "Set Enviroment Variable"
-      #   run: |
-      #      source my_env.env && export $(sed '/^#/d' my_env.env | cut -d= -f1)
-      #      export KlocworkProject="sample_windows"
-      #      export KlocworkCSharpProject="sample_windows_csharp"
-      #      export CoverityStream="CCG-ADO-BA-SAMPLE-WINDOWS-C-DEVELOP"
-      #      export CoverityCSharpStream="CCG-ADO-BA-SAMPLE-WINDOWS-CSHARP-DEVELOP"
-      #      export -p
-      #   shell: bash
-
-      - name: Import environment variables from a file
-        id: import-env
-        shell: bash
-        run: |
-          while read line; do
-            [[ "$line" =~ ^#.*$ ]] && continue
-            echo "$line" >> $GITHUB_ENV
-          done < my_env.env
   
       - name: "Print Build Config File."
         run: |
             python hello.py
+        shell: bash
+      
+      - name: Print all environment variables
+        run: printenv
         shell: bash

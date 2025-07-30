@@ -2,27 +2,18 @@ import os
 import json
 
 #Pass the above JSON file and create a file object
-
-fileObj = open('BuildConfig.json',)
+fileObj = open('BuildConfig.json')
 
 #Convert JSON and parse as Python Dictionary
-
 jsonDict = json.load(fileObj)
-
 print(jsonDict)
 
+os.environ["TWSRESULT_PYTHON"] = "FAILED"
 #Substitute the value wherever required using os.path.expandvars
-KlocworkProject = os.getenv("KlocworkProject")
-KlocworkCSharpProject = os.getenv("KlocworkCSharpProject")
-CoverityStream = os.getenv("CoverityStream")
-CoverityCSharpStream = os.getenv("CoverityCSharpStream")
-CoverityStream1 = os.getenv("CoverityStream1")
-CHROME_BIN = os.getenv("CHROME_BIN")
+TWSResult = os.getenv("tws_result")
 
-print("KlocworkProject: ", KlocworkProject)
-print("KlocworkCSharpProject: ", KlocworkCSharpProject)
-print("CoverityStream: ", CoverityStream)
-print("CoverityCSharpStream: ", CoverityCSharpStream)
-print("CoverityCSharpStream1: ", CoverityStream1)
-print("CHROME_BIN: ", CHROME_BIN)
-print(os.environ)
+print("TWSResult: ", TWSResult)
+
+env_file = os.getenv('GITHUB_ENV')
+with open(env_file, "a") as myfile:
+    print("TWSRESULT_GHA=SUCCESS", file=myfile)
