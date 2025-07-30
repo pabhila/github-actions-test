@@ -10,7 +10,7 @@ print(jsonDict)
 
 os.environ["TWSRESULT_PYTHON"] = "FAILED"
 #Substitute the value wherever required using os.path.expandvars
-TWSResult = os.getenv("tws_result")
+TWSResult = os.getenv("TWSRESULT_PYTHON")
 
 print("TWSResult: ", TWSResult)
 
