@@ -87,11 +87,6 @@ def main():
         'SENDER_PASSWORD': sender_password
     }
     
-    missing_vars = [var for var, value in required_vars.items() if not value]
-    if missing_vars:
-        print(f"❌ Missing required environment variables: {', '.join(missing_vars)}")
-        sys.exit(1)
-    
     print(f"🔍 Workflow triggered by: {triggered_by}")
     print(f"📦 Repository: {repository}")
     print(f"⚡ Workflow: {workflow_name}")
