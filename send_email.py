@@ -52,7 +52,6 @@ def send_email(recipient_email, subject, body, smtp_server, smtp_port, sender_em
         
         # Create SMTP session
         server = smtplib.SMTP('smtp.intel.com', 25)
-        server.starttls()  # Enable security
         
         # Send email
         text = message.as_string()
