@@ -87,13 +87,14 @@ def main():
         'SENDER_PASSWORD': sender_password
     }
     
+    # Get user's email
+    recipient_email = get_user_email(github_token, triggered_by)
+
     print(f"🔍 Workflow triggered by: {triggered_by}")
     print(f"📦 Repository: {repository}")
     print(f"⚡ Workflow: {workflow_name}")
-    
-    # Get user's email
-    recipient_email = get_user_email(github_token, triggered_by)
-    
+    print(f"    Recipient Name: {recipient_email}")
+
     if not recipient_email:
         print(f"❌ Could not retrieve email for user: {triggered_by}")
         print("💡 Make sure the GitHub token has appropriate permissions or the user has a public email")
