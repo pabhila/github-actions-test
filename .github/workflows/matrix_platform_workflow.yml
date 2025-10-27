@@ -49,6 +49,7 @@ jobs:
         run: python hello.py
       
       - name: Create artifact directory
+        shell: bash
         run: |
           mkdir -p artifacts
           echo "Build completed on ${{ matrix.platform }}" > artifacts/build-info.txt
