@@ -37,7 +37,9 @@ jobs:
         shell: bash
       
       - name: Print all environment variables
-        run: printenv
+        run: |
+           printenv
+           echo "${{ env.EDSS_VERSION }}"
         shell: bash
 
       - name: Send email notification
