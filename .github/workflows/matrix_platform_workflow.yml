@@ -1,0 +1,69 @@
+name: Matrix Platform Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - copilot/**
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-matrix:
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        include:
+          - os: ubuntu-latest
+            platform: linux
+          - os: windows-latest
+            platform: windows
+          - os: macos-latest
+            platform: macos
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+      
+      - name: Display platform information
+        shell: bash
+        run: |
+          echo "Running on platform: ${{ matrix.platform }}"
+          echo "Operating System: ${{ matrix.os }}"
+          echo "Runner OS: ${{ runner.os }}"
+          python --version
+      
+      - name: Run hello.py script
+        shell: bash
+        run: python hello.py
+      
+      - name: Create artifact directory
+        shell: bash
+        run: |
+          mkdir -p artifacts
+          echo "Build completed on ${{ matrix.platform }}" > artifacts/build-info.txt
+          echo "OS: ${{ matrix.os }}" >> artifacts/build-info.txt
+          echo "Timestamp: $(date)" >> artifacts/build-info.txt
+      
+      - name: Upload artifacts with unique names
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifact-${{ matrix.platform }}-${{ github.run_number }}
+          path: artifacts/
+          retention-days: 7
